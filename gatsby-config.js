@@ -36,22 +36,6 @@ module.exports = {
 			},
 		},
 		{
-			resolve: `gatsby-plugin-prefetch-google-fonts`,
-			options: {
-				fonts: [
-					{
-						family: `Space Mono`,
-						variants: [`400`, `700`]
-					},
-					{
-						family: `Montserrat`,
-						variants: [`400`],
-						subsets: [`latin`]
-					},
-				],
-			},
-		},
-		{
 			resolve: 'gatsby-plugin-react-svg',
 			options: {
 				rule: {
