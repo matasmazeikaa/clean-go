@@ -1,0 +1,13 @@
+.button {
+	padding: 12px 24px;
+	background-color: var(--dark-color);
+	color: var(--light-color);
+	border: none;
+	cursor: pointer;
+
+	&--primary {
+		background-color: var(--primary-color);
+		color: var(--light-color);
+		border: 1px solid var(--dark-color);
+	}
+}

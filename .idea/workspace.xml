@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="373a1127-d1e4-41c2-aad8-f5fc0fb2d7af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GatsbyLink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GatsbyLink.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Input.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Section.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Section.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/chevron-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/facebook-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/floor-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/floor-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/floor-3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/hero-icon-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/hero-icon-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/hero-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/instagram-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/landing-section-2-icon-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/landing-section-2-icon-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/landing-section-2-icon-3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/landing-section-2-icon-4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/landing-section-2-img-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/landing-section-2-img-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/Hero.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/Hero.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/HeroRegister.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/HeroRegister.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection3.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection4.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection5.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection6.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/page-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/page-2.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1rvYbizzzue659SEXsvJLPpiR0W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/src/pages/landing" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="373a1127-d1e4-41c2-aad8-f5fc0fb2d7af" name="Default Changelist" comment="" />
+      <created>1619858103536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619858103536</updated>
+      <workItem from="1619858104587" duration="17580000" />
+      <workItem from="1619950545699" duration="338000" />
+      <workItem from="1619950885525" duration="16054000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="360" y="232" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619876411119">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="360" y="232" key="#com.intellij.execution.impl.EditConfigurationsDialog/1792.65.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1619876411119" />
+    <state x="100" y="127" width="1592" height="893" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1619860699291">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="100" y="127" width="1592" height="893" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1792.65.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1619860699291" />
+    <state x="696" y="487" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619867501118">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="696" y="487" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1792.65.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1619867501118" />
+    <state x="438" y="180" width="755" height="654" key="find.popup" timestamp="1619972245316">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="438" y="180" width="755" height="654" key="find.popup/1792.65.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1619972245316" />
+    <state x="561" y="271" width="670" height="676" key="search.everywhere.popup" timestamp="1619972689407">
+      <screen x="0" y="25" width="1792" height="1095" />
+    </state>
+    <state x="561" y="271" width="670" height="676" key="search.everywhere.popup/1792.65.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1619972689407" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/landing/LandingSection5.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Logo.js</url>
+          <line>7</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

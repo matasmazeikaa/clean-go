@@ -1,0 +1,33 @@
+@import '../../assets/scss/mixins';
+
+.hero-register {
+	position: absolute;
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 2%;
+	grid-row-gap: 16px;
+	padding: 40px 40px 20px 40px;
+	background-color: var(--light-color);
+	border: 1px solid var(--dark-color);
+	left: 0;
+	right: 0;
+	max-width: 750px;
+	justify-content: center;
+	bottom: -90px;
+	margin: 0 auto;
+
+	&__button {
+		grid-area: 3/2;
+		justify-self: flex-end;
+	}
+
+	&__input {
+		width: 100%;
+	}
+
+	@include up-to-medium {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+}

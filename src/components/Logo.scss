@@ -1,0 +1,10 @@
+@import '../assets/scss/mixins';
+
+.logo {
+	width: 180px;
+	display: flex;
+
+	@include up-to-medium {
+		width: 120px;
+	};
+}

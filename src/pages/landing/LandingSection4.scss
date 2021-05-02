@@ -1,0 +1,80 @@
+.landing-section-4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	&__button-group {
+		position: relative;
+		margin-bottom: 40px;
+		border: 1px solid var(--secondary-color);
+		background-size: 50% 100%;
+		background-image: linear-gradient(to right, var(--secondary-color), var(--secondary-color));
+		background-repeat: no-repeat;
+		-webkit-transition: background-position 0.5s;
+		-moz-transition: background-position 0.5s;
+		transition: background-position 0.5s;
+
+		&--1-active {
+			background-position: 0;
+		}
+
+		&--2-active {
+			background-position: 100%;
+		}
+	}
+
+	&__button {
+		padding: 16px 40px;
+		border: none;
+		font-size: 18px;
+		background-color: transparent;
+		cursor: pointer;
+		transition: color 0.5s ease-in;
+
+		&--active {
+			color: var(--light-color);
+		}
+	}
+
+	&__selection-group {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		grid-gap: 30px;
+	}
+
+	&__selection {
+		position: relative;
+		display: grid;
+		grid-template-columns: max-content 1fr;
+		padding: 20px 40px;
+		border: 1px solid var(--dark-color);
+		cursor: pointer;
+		transition: color 0.1s ease-in, background-color 0.1s ease-in;
+
+		&:hover {
+			background-color: var(--secondary-color);
+			color: var(--light-color);
+		}
+	}
+
+	&__square-info {
+		color: inherit;
+	}
+
+	&__selection-info {
+		margin-left: 16px;
+	}
+
+	&__price {
+		position: absolute;
+		right: 15px;
+		bottom: 5px;
+		font-weight: bold;
+		font-size: 20px;
+	}
+}

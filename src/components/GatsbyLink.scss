@@ -1,0 +1,28 @@
+.link {
+	display: block;
+	color: var(--dark-color);
+	text-decoration: none;
+	transition: opacity 0.25s ease-in;
+	cursor: pointer;
+	width: fit-content;
+
+	&:after {
+		display: block;
+		content: '';
+		border-bottom: solid 2px var(--dark-color);
+		transform: scaleX(0);
+		transition: transform 250ms ease-in-out;
+	}
+
+	&:hover:after {
+		transform: scaleX(1);
+	}
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&--no-margin {
+		margin: 0;
+	}
+}
