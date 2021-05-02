@@ -26,8 +26,12 @@
 	}
 
 	@include up-to-medium {
-		display: flex;
-		flex-direction: column;
 		position: relative;
+		grid-template-columns: 1fr;
+		width: 100%;
+
+		&__button {
+			grid-area: unset;
+		}
 	}
 }
