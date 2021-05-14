@@ -1,4 +1,4 @@
-@import '../../assets/scss/mixins';
+@import "../../assets/scss/mixins";
 
 .landing-section-4 {
 	display: flex;
@@ -14,7 +14,11 @@
 		margin-bottom: 40px;
 		border: 1px solid var(--secondary-color);
 		background-size: 50% 100%;
-		background-image: linear-gradient(to right, var(--secondary-color), var(--secondary-color));
+		background-image: linear-gradient(
+						to right,
+						var(--secondary-color),
+						var(--secondary-color)
+		);
 		background-repeat: no-repeat;
 		-webkit-transition: background-position 0.5s;
 		-moz-transition: background-position 0.5s;
@@ -43,6 +47,7 @@
 	}
 
 	&__selection-group {
+		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 30px;
@@ -57,11 +62,10 @@
 		cursor: pointer;
 		transition: color 0.1s ease-in, background-color 0.1s ease-in;
 
-		&:hover {
+		&:hover, &:focus {
 			background-color: var(--secondary-color);
 			color: var(--light-color);
 		}
-
 	}
 
 	&__square-info {
@@ -70,6 +74,7 @@
 
 	&__selection-info {
 		margin-left: 16px;
+		text-align: left;
 	}
 
 	&__price {
@@ -78,16 +83,34 @@
 		bottom: 5px;
 		font-weight: bold;
 		font-size: 20px;
+
+		&--static {
+			position: static;
+		}
+	}
+
+	&__house-selection-group {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 30px;
 	}
 
 	@include up-to-medium-large {
 		&__selection-group {
 			grid-template-columns: 1fr 1fr;
 		}
+		&__house-selection-group {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 
 	@include up-to-small {
 		&__selection-group {
+			grid-template-columns: 1fr;
+		}
+
+		&__house-selection-group {
 			grid-template-columns: 1fr;
 		}
 	}

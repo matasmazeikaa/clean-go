@@ -3,8 +3,16 @@ import Button from "../../components/Button"
 import { StaticImage } from "gatsby-plugin-image"
 import Section from "../../components/Section"
 import './LandingSection5.scss';
+import OrderModal from "../../components/OrderModal"
 
-const LandingSection5 = () => (
+const LandingSection5 = () => {
+  const [isOrderModalOpen, setIsOrderModalOpen] = React.useState(false);
+  
+  const closeOrderModal = () => {
+    setIsOrderModalOpen(false);
+  }
+  
+  return (
   <Section className="landing-section-5">
     <div className="landing-section-5__left-side">
       <h2 className="landing-section-5__title">Mes ❤️ SAVO KLIENTUS</h2>
@@ -12,7 +20,7 @@ const LandingSection5 = () => (
         Nežinote kuri paslauga tinka? Susisiekite su mumis ir mes jums padėsime
         išsirinkti
       </p>
-      <Button title="Susisiekite" theme="primary" />
+      <Button onClick={() => setIsOrderModalOpen(true)} title="Susisiekite" theme="primary" />
     </div>
     <div className="landing-section-5__recomendations">
       <div className="landing-section-5__recomendation-container">
@@ -61,7 +69,9 @@ const LandingSection5 = () => (
         <p className="landing-section-5__rec-date">17 Rugpjūčio 2021</p>
       </div>
     </div>
+    <OrderModal isModalOpen={isOrderModalOpen} closeModal={closeOrderModal}/>
+
   </Section>
-)
+)}
 
 export default LandingSection5

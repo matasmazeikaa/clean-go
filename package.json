@@ -23,6 +23,8 @@
     "react-collapsible": "^2.8.3",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-input-mask": "^2.0.4",
+    "react-modal": "^3.13.1",
     "sass": "^1.32.12"
   },
   "devDependencies": {

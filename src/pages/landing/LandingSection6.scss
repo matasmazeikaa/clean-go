@@ -36,7 +36,8 @@
 	}
 
 	&__answer {
-		padding: 30px 24px
+		padding: 30px 24px;
+		white-space: pre-wrap;
 	}
 
 	&__chevron {

@@ -47,7 +47,7 @@ h2 {
 h3 {
 	font-size: 24px;
 	font-weight: bold;
-	color: var(--dark-color);
+	color: inherit;
 }
 
 h4 {
@@ -60,6 +60,12 @@ p {
 	font-size: 16px;
 	font-weight: normal;
 	color: var(--dark-color);
+}
+
+button {
+	background: transparent;
+	border: none;
+	display: inline-block;
 }
 
 @include up-to-medium {
@@ -80,4 +86,8 @@ p {
 		font-weight: normal;
 		color: var(--dark-color);
 	}
+}
+
+.has-text-center {
+	text-align: center;
 }

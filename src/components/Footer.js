@@ -12,22 +12,25 @@ const Footer = () => (
       <div className="footer__links">
         <h4 className="footer__links-title">Butų ir namų valymas</h4>
         <div>
-          <GatsbyLink className="footer__link" title="Butų ir namų valymas" />
-          <GatsbyLink className="footer__link" title="Butų ir namų valymas" />
-          <GatsbyLink className="footer__link" title="Butų ir namų valymas" />
-          <GatsbyLink className="footer__link" title="Butų ir namų valymas" />
+          <GatsbyLink to='/periodinis-valymas' className="footer__link" title="Periodinis valymas " />
+          <GatsbyLink to='/generalinis-valymas' className="footer__link" title="Generalinis valymas " />
+          <GatsbyLink to='/postatybinis-valymas' className="footer__link" title="Postatybinis valymas" />
         </div>
       </div>
       <div className="footer__links">
         <h4 className="footer__links-title">Komercinių patalpų valymas</h4>
-        <GatsbyLink className="footer__link" title="Butų ir namų valymas" />
-        <GatsbyLink className="footer__link" title="Butų ir namų valymas" />
-        <GatsbyLink className="footer__link" title="Butų ir namų valymas" />
+        <GatsbyLink to='/biuro-patalpu-valymas' className="footer__link" title="Biuro patalpų valymas " />
+        <GatsbyLink to='/sandeliavimo-patalpu-valymas' className="footer__link" title="Sandėliavimo patalpų valymas" />
+        <GatsbyLink to='/parduotuviu-valymas' className="footer__link" title="Parduotuvių valymas" />
+        <GatsbyLink to='/gamybos-patalpu-valymas' className="footer__link" title="Gamybos patalpų valymas" />
+        <GatsbyLink to='/darzelio-valymas' className="footer__link" title="Darželio valymas" />
+        <GatsbyLink to='/sporto-klubu-valymas' className="footer__link" title="Sporto klubo valymas" />
       </div>
       <div className="footer__links">
         <h4 className="footer__links-title">Langų valymas</h4>
-        <GatsbyLink className="footer__link" title="Butų ir namų valymas" />
-        <GatsbyLink className="footer__link" title="Butų ir namų valymas" />
+        <GatsbyLink to='/sezoninis-langu-valymas' className="footer__link" title="Sezoninis langų valymas" />
+        <GatsbyLink to='/fasadu-valymas' className="footer__link" title="Fasadų valymas" />
+        <GatsbyLink to='/langu-valymas-po-statybu' className="footer__link" title="Langų valymas po statybų" />
       </div>
     </Section>
     <div className="footer__bottom-footer-background">
