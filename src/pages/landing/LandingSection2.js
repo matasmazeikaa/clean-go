@@ -6,7 +6,12 @@ import Icon1 from "../../images/landing-section-2-icon-1.svg"
 import Icon2 from "../../images/landing-section-2-icon-2.svg"
 import Icon3 from "../../images/landing-section-2-icon-3.svg"
 import Icon4 from "../../images/landing-section-2-icon-4.svg"
-
+import ConfidentialIcon from '../../images/konfidenciolumas.svg'
+import GoodPrice from '../../images/konkurencinga_kaina.svg'
+import Security from '../../images/patikimumas.svg'
+import HighQualityCS from '../../images/aukstos_klases_aptarnavimas.svg'
+import Clean from '../../images/baldu_cheminis_valymas.svg'
+import Clean2 from '../../images/bazinis_valymas.svg'
 import Layout from "../../components/layout"
 
 const LandingSection2 = () => (
@@ -37,27 +42,27 @@ const LandingSection2 = () => (
       </p>
       <div className="landing-section-2__icons-container">
         <div>
-          <Icon1 className="landing-section-2__icon" />
+          <Clean className="landing-section-2__icon" />
           <p className="landing-section-2__icon-text">Švarią aplinką </p>
         </div>
         <div>
-          <Icon2 className="landing-section-2__icon" />
+          <Clean2 className="landing-section-2__icon" />
           <p className="landing-section-2__icon-text">Nepriekaištingą ir profesionalią paslaugą </p>
         </div>
         <div>
-          <Icon3 className="landing-section-2__icon" />
+          <HighQualityCS className="landing-section-2__icon" />
           <p className="landing-section-2__icon-text">Aukštos klasės aptarnavimą </p>
         </div>
         <div>
-          <Icon4 className="landing-section-2__icon" />
+          <Security className="landing-section-2__icon" />
           <p className="landing-section-2__icon-text">Patikimumą </p>
         </div>
         <div>
-          <Icon4 className="landing-section-2__icon" />
+          <ConfidentialIcon className="landing-section-2__icon" />
           <p className="landing-section-2__icon-text">Konfidencialumą </p>
         </div>
         <div>
-          <Icon4 className="landing-section-2__icon" />
+          <GoodPrice className="landing-section-2__icon" />
           <p className="landing-section-2__icon-text">Konkurencingą kainą</p>
         </div>
       </div>

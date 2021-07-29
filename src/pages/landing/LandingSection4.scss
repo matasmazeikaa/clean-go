@@ -4,9 +4,57 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: #f8f8f8;
 
 	&__title {
 		margin-bottom: 24px;
+	}
+
+	&__icon {
+		&--flat-1 {
+			width: 30px;
+			height: 30px;
+		}
+
+		&--flat-2 {
+			width: 40px;
+			height: 40px;
+		}
+
+		&--flat-3 {
+			width: 50px;
+			height: 50px;
+		}
+
+		&--house-1 {
+			height: 45px;
+			width: 45px;
+		}
+
+		&--house-2 {
+			height: 50px;
+			width: 50px;
+		}
+
+		&--house-3 {
+			height: 55px;
+			width: 55px;
+		}
+
+		&--house-4 {
+			height: 60px;
+			width: 60px;
+		}
+
+		&--house-5 {
+			height: 65px;
+			width: 65px;
+		}
+
+		&--house-6 {
+			height: 70px;
+			width: 70px;
+		}
 	}
 
 	&__button-group {
@@ -54,7 +102,9 @@
 	}
 
 	&__selection {
+		min-height: 110px;
 		position: relative;
+		align-items: center;
 		display: grid;
 		grid-template-columns: max-content 1fr;
 		padding: 20px 40px;

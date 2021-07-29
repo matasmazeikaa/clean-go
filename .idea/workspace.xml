@@ -14,46 +14,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373a1127-d1e4-41c2-aad8-f5fc0fb2d7af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/OrderModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/OrderModal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/calendar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/fitness-club.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/furniture.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/generalinis.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/house-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/house-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/house-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/house-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/house-5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/office.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/postatybinis.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/shop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/warehouse.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/window.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/biuro-patalpų-valymas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/darzelio-valymas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/fasadu-valymas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/gamybos-patalpu-valymas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/generalinis-valymas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/landing/HeroSeo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/langu-valymas-po-statybu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/parduotuves-valymas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/periodinis-valymas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/postatybinis-valymas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/sandeliavimo-patalpu-valymas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/sezoninis-langu-valymas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/sporto-klubu-valymas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlify/functions/sendMail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/sendMailApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/aukstos_klases_aptarnavimas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/baldu_cheminis_valymas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bazinis_valymas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/biuras.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/butas-01.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/butas-02.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/butas-03.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/butas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/cleaning-team.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/konfidenciolumas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/konkurencinga_kaina.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/kotedzas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/langu_valymas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/namas-01.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/namas-02.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/namas-03.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/namas-04.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/namas-05.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/namas-06.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/namas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/parduotuve.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/patikimumas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/periodinis_valymas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/postatybinis_valymas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/prof_paslauga.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/sandelis.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/sporto_klubas.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/AboutUs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Kontaktai.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/apie-mus.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/kontaktai.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OrderModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/floor-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/floor-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/floor-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/hero-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/hero-image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/house-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/house-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/house-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/house-4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/house-5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/house-6.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/landing/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/Hero.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/landing/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/Hero.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/landing/HeroRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/HeroRegister.js" afterDir="false" />
@@ -63,8 +76,6 @@
       <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection3.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection4.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection6.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection6.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +85,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1rvYbizzzue659SEXsvJLPpiR0W" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -82,8 +101,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -94,7 +114,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/src/pages/landing" />
     </key>
@@ -111,6 +135,9 @@
       <workItem from="1619950545699" duration="338000" />
       <workItem from="1619950885525" duration="18444000" />
       <workItem from="1621014808376" duration="11512000" />
+      <workItem from="1626972391498" duration="294000" />
+      <workItem from="1626975422068" duration="4552000" />
+      <workItem from="1627578569697" duration="10819000" />
     </task>
     <servers />
   </component>
@@ -129,31 +156,6 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="-1071" y="-11" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621026378662">
-      <screen x="-1080" y="-369" width="1080" height="1895" />
-    </state>
-    <state x="-1071" y="-11" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1080.-369.1080.1895/0.25.1792.1095/1792.25.1920.1055@-1080.-369.1080.1895" timestamp="1621026378662" />
-    <state x="360" y="232" key="#com.intellij.execution.impl.EditConfigurationsDialog/1792.65.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1619876411119" />
-    <state x="100" y="127" width="1592" height="893" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1619975406223">
-      <screen x="0" y="25" width="1792" height="1095" />
-    </state>
-    <state x="100" y="127" width="1592" height="893" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1792.65.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1619975406223" />
-    <state x="696" y="487" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619867501118">
-      <screen x="0" y="25" width="1792" height="1095" />
-    </state>
-    <state x="696" y="487" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1792.65.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1619867501118" />
-    <state x="-816" y="-101" width="572" height="1132" key="find.popup" timestamp="1621023872436">
-      <screen x="-1080" y="-369" width="1080" height="1895" />
-    </state>
-    <state x="-816" y="-101" width="572" height="1132" key="find.popup/-1080.-369.1080.1895/0.25.1792.1095/1792.25.1920.1055@-1080.-369.1080.1895" timestamp="1621023872436" />
-    <state x="438" y="180" width="755" height="654" key="find.popup/1792.65.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1619974551857" />
-    <state x="-742" y="57" width="670" height="1170" key="search.everywhere.popup" timestamp="1621029410453">
-      <screen x="-1080" y="-369" width="1080" height="1895" />
-    </state>
-    <state x="-742" y="57" width="670" height="1170" key="search.everywhere.popup/-1080.-369.1080.1895/0.25.1792.1095/1792.25.1920.1055@-1080.-369.1080.1895" timestamp="1621029410453" />
-    <state x="561" y="271" width="670" height="676" key="search.everywhere.popup/1792.65.1920.1055/0.25.1792.1095@0.25.1792.1095" timestamp="1619975055839" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -165,11 +167,6 @@
           <url>file://$PROJECT_DIR$/src/components/Logo.js</url>
           <line>7</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Input.js</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

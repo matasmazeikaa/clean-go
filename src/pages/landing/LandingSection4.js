@@ -1,28 +1,34 @@
 import * as React from "react"
 import "./LandingSection4.scss"
-import Floor1 from "../../images/floor-1.svg"
-import Floor2 from "../../images/floor-2.svg"
-import Floor3 from "../../images/floor-3.svg"
-import House1 from "../../images/house-1.svg"
-import House2 from "../../images/house-2.svg"
-import House3 from "../../images/house-3.svg"
-import House4 from "../../images/house-4.svg"
-import House5 from "../../images/house-5.svg"
-import House6 from "../../images/house-6.svg"
+import Floor1 from "../../images/butas-01.svg"
+import Floor2 from "../../images/butas-02.svg"
+import Floor3 from "../../images/butas-03.svg"
+import House1 from "../../images/namas-01.svg"
+import House2 from "../../images/namas-02.svg"
+import House3 from "../../images/namas-03.svg"
+import House4 from "../../images/namas-04.svg"
+import House5 from "../../images/namas-05.svg"
+import House6 from "../../images/namas-06.svg"
 import Section from "../../components/Section"
 import OrderModal from "../../components/OrderModal"
 
 const LandingSection4 = () => {
   const [activeButton, setActiveButton] = React.useState(1)
-  const [isOrderModalOpen, setIsOrderModalOpen] = React.useState(false);
+  const [isOrderModalOpen, setIsOrderModalOpen] = React.useState(false)
+  const [selectedService, setSelectedService] = React.useState('');
   
   const closeOrderModal = () => {
-    setIsOrderModalOpen(false);
+    setIsOrderModalOpen(false)
   }
   
   const setActiveButtonNumber = React.useCallback((value) => () => {
     setActiveButton(value)
   }, [])
+  
+  const openModalAndSetService = (service) => {
+    setIsOrderModalOpen(true)
+    setSelectedService(service)
+  }
   
   return (
     <Section className="landing-section-4">
@@ -49,24 +55,24 @@ const LandingSection4 = () => {
       </div>
       {activeButton === 1 && (
         <div className="landing-section-4__selection-group">
-          <button onClick={() => setIsOrderModalOpen(true)} className="landing-section-4__selection">
-            <Floor1 />
+          <button onClick={() => openModalAndSetService('1 kambario buto valymas')} className="landing-section-4__selection">
+            <Floor1 className="landing-section-4__icon--flat-1"/>
             <div className="landing-section-4__selection-info">
               <h4>1 kambario butas</h4>
               <p className="landing-section-4__square-info">20-35 m2</p>
             </div>
             <p className="landing-section-4__price">40 EUR</p>
           </button>
-          <button onClick={() => setIsOrderModalOpen(true)} className="landing-section-4__selection">
-            <Floor2 />
+          <button onClick={() => openModalAndSetService('2 kambarių buto valymas')} className="landing-section-4__selection">
+            <Floor2 className="landing-section-4__icon--flat-2"/>
             <div className="landing-section-4__selection-info">
               <h4>2 kambario butas</h4>
               <p className="landing-section-4__square-info">40-55 m2</p>
             </div>
             <p className="landing-section-4__price">50 EUR</p>
           </button>
-          <button onClick={() => setIsOrderModalOpen(true)} className="landing-section-4__selection">
-            <Floor3 />
+          <button onClick={() => openModalAndSetService('3 kambarių buto valymas')} className="landing-section-4__selection">
+            <Floor3 className="landing-section-4__icon--flat-3"/>
             <div className="landing-section-4__selection-info">
               <h4>3 kambario butas</h4>
               <p className="landing-section-4__square-info">56-79 m2</p>
@@ -78,43 +84,43 @@ const LandingSection4 = () => {
       
       {activeButton === 2 && (
         <div className="landing-section-4__house-selection-group">
-          <button onClick={() => setIsOrderModalOpen(true)} className="landing-section-4__selection">
-            <House1 />
+          <button onClick={() => openModalAndSetService('90-110 m2 namo valymas')} className="landing-section-4__selection">
+            <House1 className="landing-section-4__icon--house-1"/>
             <div className="landing-section-4__selection-info">
               <p className="landing-section-4__square-info">90-110 m2</p>
               <p className="landing-section-4__price landing-section-4__price--static">52.5 EUR</p>
             </div>
           </button>
-          <button onClick={() => setIsOrderModalOpen(true)} className="landing-section-4__selection">
-            <House2 />
+          <button onClick={() => openModalAndSetService('111-130 m2 namo valymas')} className="landing-section-4__selection">
+            <House2 className="landing-section-4__icon--house-2"/>
             <div className="landing-section-4__selection-info">
               <p className="landing-section-4__square-info">111-130 m2</p>
               <p className="landing-section-4__price landing-section-4__price--static">57.5 EUR</p>
             </div>
           </button>
-          <button onClick={() => setIsOrderModalOpen(true)} className="landing-section-4__selection">
-            <House3 />
+          <button onClick={() => openModalAndSetService('131-155 m2 namo valymas')} className="landing-section-4__selection">
+            <House3 className="landing-section-4__icon--house-3"/>
             <div className="landing-section-4__selection-info">
               <p className="landing-section-4__square-info">131-155 m2</p>
-            <p className="landing-section-4__price landing-section-4__price--static">62.5 EUR</p>
+              <p className="landing-section-4__price landing-section-4__price--static">62.5 EUR</p>
             </div>
           </button>
-          <button onClick={() => setIsOrderModalOpen(true)} className="landing-section-4__selection">
-            <House4 />
+          <button onClick={() => openModalAndSetService('156-175 m2 namo valymas')} className="landing-section-4__selection">
+            <House4 className="landing-section-4__icon--house-4"/>
             <div className="landing-section-4__selection-info">
               <p className="landing-section-4__square-info">156-175 m2</p>
               <p className="landing-section-4__price landing-section-4__price--static">67.5 EUR</p>
             </div>
           </button>
-          <button onClick={() => setIsOrderModalOpen(true)} className="landing-section-4__selection">
-            <House5 />
+          <button onClick={() => openModalAndSetService('176-200 m2 namo valymas')} className="landing-section-4__selection">
+            <House5 className="landing-section-4__icon--house-5"/>
             <div className="landing-section-4__selection-info">
               <p className="landing-section-4__square-info">176-200 m2</p>
               <p className="landing-section-4__price landing-section-4__price--static">75.5 EUR</p>
             </div>
           </button>
-          <button onClick={() => setIsOrderModalOpen(true)} className="landing-section-4__selection">
-            <House6 />
+          <button onClick={() => openModalAndSetService('200+ m2 namo valymas')} className="landing-section-4__selection">
+            <House6 className="landing-section-4__icon--house-6"/>
             <div className="landing-section-4__selection-info">
               <p className="landing-section-4__square-info">200+ m2</p>
               <p className="landing-section-4__price landing-section-4__price--static">90+ EUR</p>
@@ -122,7 +128,7 @@ const LandingSection4 = () => {
           </button>
         </div>
       )}
-      <OrderModal isModalOpen={isOrderModalOpen} closeModal={closeOrderModal}/>
+      <OrderModal isModalOpen={isOrderModalOpen} closeModal={closeOrderModal} selectedService={selectedService}/>
     </Section>
   )
 }

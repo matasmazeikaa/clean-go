@@ -4,8 +4,14 @@
 .landing-section-3 {
 	$this: &;
 
+	h3 {
+		text-align: left;
+	}
+
 	&__icon {
 		margin-bottom: 10px;
+		height: 100px;
+		width: 100px;
 	}
 
 	&__title {

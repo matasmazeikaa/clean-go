@@ -6,7 +6,7 @@ const Input = ({ label, className, classNameContainer, isInputContainer = false,
   <div className={`input-container ${classNameContainer} ${isInputContainer && "input-container--phone-input"}`}>
     <label>{label}</label>
     {isInputContainer ? (
-      <InputMask mask="999999" onChange={onChange} value={value}
+      <InputMask mask="99999999" onChange={onChange} value={value}
                  className={`input ${className} ${isInputContainer && "input--phone-input"}`} name={name} />
     ) : <input onChange={onChange} value={value} className={`input ${className} ${isInputContainer && "input&--phone-input"}`} name={name} />}
   </div>

@@ -1,4 +1,5 @@
 import * as React from "react"
+import axios from 'axios';
 import "./Hero.scss"
 import HeroRegister from "./HeroRegister"
 import Header from "../../components/Header"

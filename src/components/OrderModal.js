@@ -4,6 +4,7 @@ import Input from "./Input"
 import "./OrderModal.scss"
 import CloseIcon from "../images/close.svg"
 import Button from "./Button"
+import { sendMailApi } from "../api/sendMailApi"
 
 const customStyles = {
   content: {
@@ -18,12 +19,14 @@ const customStyles = {
   }
 }
 
-// Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
-const OrderModal = ({ closeModal, isModalOpen }) => {
+const OrderModal = ({ closeModal, isModalOpen, selectedService }) => {
   const [formValues, setFormValues] = React.useState({
     name: "",
     phone: ""
   })
+  
+  const [isEmailSent, setIsEmailSent] = React.useState(false)
+  const [isLoadingEmailSend, setIsLoadingEmailSend] = React.useState(false)
   
   const onInputChange = event => {
     const { target } = event
@@ -34,42 +37,81 @@ const OrderModal = ({ closeModal, isModalOpen }) => {
     }))
   }
   
+  const handleModalClose = React.useCallback(() => {
+    setIsEmailSent(false)
+    closeModal()
+  })
+  
+  const resetFormValues = () => {
+    setFormValues({
+      name: "",
+      phone: ""
+    })
+  }
+  
+  const sendMail = async () => {
+    setIsLoadingEmailSend(true)
+    
+    try {
+      await sendMailApi(JSON.stringify({
+        ...formValues,
+        cleaningType: selectedService
+      }))
+      setIsEmailSent(true)
+      resetFormValues()
+    } catch (e) {
+      console.error(e)
+    } finally {
+      setIsLoadingEmailSend(false)
+    }
+  }
+  
   return (
     <div className="order-modal">
       <Modal
         isOpen={isModalOpen}
-        onRequestClose={closeModal}
+        onRequestClose={handleModalClose}
         style={customStyles}
         contentLabel="Example Modal"
       >
         <div className="order-modal__top-part">
-          <button onClick={closeModal}>
+          <button onClick={handleModalClose}>
             <CloseIcon className="order-modal__close-icon" />
           </button>
         </div>
-        <div className="order-modal__modal-content">
-          <h4 className="order-modal__title has-text-center">
-            Užpildykit formą ir mes jums paskambinsime
-          </h4>
-          <Input
-            classNameContainer="order-modal__input order-modal__input--margin-bottom20"
-            className="order-modal__input"
-            label="Vardas:*"
-            onChange={onInputChange}
-            name="name"
-            value={formValues.name}
-          />
-          <Input
-            classNameContainer="order-modal__input order-modal__input--margin-bottom20"
-            className="order-modal__input"
-            label="Telefono numeris:*"
-            isInputContainer
-            onChange={onInputChange}
-            name="phone"
-            value={formValues.phone}
-          />
-          <Button theme="secondary" title="Užsakyti" />
-        </div>
+        {isEmailSent ? (
+          <div className="order-modal__modal-content">
+            <h4 className="order-modal__title has-text-center">
+              Ačiū už Jūsų užklausą. <br />
+              Netrukus susisieksime
+            </h4>
+          </div>
+        ) : (
+          <div className="order-modal__modal-content">
+            <h4 className="order-modal__title has-text-center">
+              Užpildykit formą ir mes jums paskambinsime
+            </h4>
+            <Input
+              classNameContainer="order-modal__input order-modal__input--margin-bottom20"
+              className="order-modal__input"
+              label="Vardas:*"
+              onChange={onInputChange}
+              name="name"
+              value={formValues.name}
+            />
+            <Input
+              classNameContainer="order-modal__input order-modal__input--margin-bottom20"
+              className="order-modal__input"
+              label="Telefono numeris:*"
+              isInputContainer
+              onChange={onInputChange}
+              name="phone"
+              value={formValues.phone}
+            />
+            <Button theme="secondary" title="Užsakyti" onClick={() => sendMail()} isLoading={isLoadingEmailSend} />
+          </div>
+        )}
+      
       </Modal>
     </div>
   )
