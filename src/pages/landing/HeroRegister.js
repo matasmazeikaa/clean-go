@@ -13,6 +13,7 @@ import {
   PERIODINIS,
   POSTATYBINIS
 } from "../../constants"
+import { sendMailApi } from "../../api/sendMailApi"
 
 
 const CLEANING_TYPES = [
@@ -47,7 +48,7 @@ const HeroRegister = () => {
     })))
   }, [inputData])
   
-  const sendMail = React.useCallback(() => {
+  const sendMail = React.useCallback(async () => {
     if (inputData.name === "" || inputData.phone === "" || service === "" || cleaningType === "") {
       return
     }
@@ -59,7 +60,7 @@ const HeroRegister = () => {
     })
     
     try {
-      axios.post(" http://localhost:42453/.netlify/functions/sendMail", dataStringified)
+      await sendMailApi(dataStringified)
     } catch (e) {
       console.log(e)
     }
