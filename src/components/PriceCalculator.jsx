@@ -32,13 +32,7 @@ import Input from "./Input"
 import { sendMailApi } from "../api/sendMailApi"
 import EmailSentModal from "./EmailSentModal"
 
-const CLEANING_TYPES = [
-  PERIODINIS,
-  GENERALINIS,
-  POSTATYBINIS,
-  LANGU_VALYMAS,
-  CHEMINIS_BALDU_VALYMAS,
-]
+const CLEANING_TYPES = [PERIODINIS, GENERALINIS, POSTATYBINIS, LANGU_VALYMAS]
 
 const SERVICES = [
   { value: BUTO_VALYMAS, icon: "../images/butas-03.svg" },
@@ -66,7 +60,7 @@ const PriceCalculator = () => {
     email: "",
   })
   const [isLoadingUserOrder, setIsLoadingUserOrder] = React.useState(false)
-  const [isEmailSentModalOpen, setIsEmailSentModalOpen] = React.useState(false);
+  const [isEmailSentModalOpen, setIsEmailSentModalOpen] = React.useState(false)
 
   const [isOrdering, setIsOrdering] = React.useState(false)
 
@@ -103,21 +97,21 @@ const PriceCalculator = () => {
 
   const resetUserData = () => {
     setUserData({
-      name: '',
-      email: '',
-      phone: ''
+      name: "",
+      email: "",
+      phone: "",
     })
   }
-  
+
   const handleUserOrder = React.useCallback(async () => {
     setIsLoadingUserOrder(true)
 
     const mail = `<strong>Name: </strong> ${userData.name} <br /> <strong>Numeris: </strong> +370${userData.phone} <br /> <strong>El. paštas: </strong> ${userData.email} <br /> <strong>Valymo tipas: </strong> ${cleaningType} <br /> <strong>Paslauga: </strong> ${service} <br /> <strong>Plotas: </strong> ${area} m2 <br /> <strong>Valymo dažnumas: </strong> ${cleaningFrequency}`
-    
+
     try {
-      await sendMailApi(JSON.stringify({ mail }));
-      resetUserData();
-      setIsEmailSentModalOpen(true);
+      await sendMailApi(JSON.stringify({ mail }))
+      resetUserData()
+      setIsEmailSentModalOpen(true)
     } catch (error) {
       console.error(error)
     } finally {
@@ -329,26 +323,32 @@ const PriceCalculator = () => {
               <span className="price-calculator__radio-btn-text">{type}</span>
             </label>
           ))}
-          <h3 className="price-calculator__title">2. Pasirinkite paslaugą:</h3>
-          <div className="price-calculator__radio-selection-container">
-            {SERVICES.map(({ value, icon }) => (
-              <label
-                className={`price-calculator__radio-selection ${
-                  value === service &&
-                  "price-calculator__radio-selection--active"
-                }`}
-              >
-                {serviceIcon(value)}
-                <input
-                  type="radio"
-                  value={value}
-                  checked={service === value}
-                  onChange={onServiceChange}
-                />
-                <span>{value}</span>
-              </label>
-            ))}
-          </div>
+          {cleaningType !== LANGU_VALYMAS && (
+            <>
+              <h3 className="price-calculator__title">
+                2. Pasirinkite paslaugą:
+              </h3>
+              <div className="price-calculator__radio-selection-container">
+                {SERVICES.map(({ value, icon }) => (
+                  <label
+                    className={`price-calculator__radio-selection ${
+                      value === service &&
+                      "price-calculator__radio-selection--active"
+                    }`}
+                  >
+                    {serviceIcon(value)}
+                    <input
+                      type="radio"
+                      value={value}
+                      checked={service === value}
+                      onChange={onServiceChange}
+                    />
+                    <span>{value}</span>
+                  </label>
+                ))}
+              </div>
+            </>
+          )}
           <h3 className="price-calculator__title price-calculator__title--mb-40">
             3. Nurodykite patalpų plotą:
           </h3>
@@ -387,23 +387,34 @@ const PriceCalculator = () => {
               </div>
             )}
           />
-          <h3 className="price-calculator__title">4. Valymo dažnumas</h3>
-          {CLEANING_FREQUENCY.map(value => (
-            <label className="price-calculator__radio-btn-container">
-              <input
-                className="price-calculator__radio-btn-input"
-                type="radio"
-                value={value}
-                checked={cleaningFrequency === value}
-                onChange={onCleaningFrequencyChange}
-              />
-              <span className="price-calculator__radio-btn-text">{value}</span>
-            </label>
-          ))}
+          {cleaningType === PERIODINIS && (
+            <>
+              <h3 className="price-calculator__title">4. Valymo dažnumas</h3>
+              {CLEANING_FREQUENCY.map(value => (
+                <label className="price-calculator__radio-btn-container">
+                  <input
+                    className="price-calculator__radio-btn-input"
+                    type="radio"
+                    value={value}
+                    checked={cleaningFrequency === value}
+                    onChange={onCleaningFrequencyChange}
+                  />
+                  <span className="price-calculator__radio-btn-text">
+                    {value}
+                  </span>
+                </label>
+              ))}
+            </>
+          )}
         </div>
       ) : (
         <div className="price-calculator__interaction-container">
-          <Input label="Vardas:" name="name" onChange={onUserDataChange} value={userData.name}/>
+          <Input
+            label="Vardas:"
+            name="name"
+            onChange={onUserDataChange}
+            value={userData.name}
+          />
           <Input
             label="Telefono numeris:"
             name="phone"
@@ -419,8 +430,14 @@ const PriceCalculator = () => {
             onChange={onUserDataChange}
           />
 
-          <Button onClick={handleUserOrder} title={isLoadingUserOrder ? 'Loading...' : 'Užsakyti'}/>
-          <EmailSentModal isModalOpen={isEmailSentModalOpen} closeModal={() => setIsEmailSentModalOpen(false)}/>
+          <Button
+            onClick={handleUserOrder}
+            title={isLoadingUserOrder ? "Loading..." : "Užsakyti"}
+          />
+          <EmailSentModal
+            isModalOpen={isEmailSentModalOpen}
+            closeModal={() => setIsEmailSentModalOpen(false)}
+          />
         </div>
       )}
 

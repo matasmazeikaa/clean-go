@@ -14,17 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373a1127-d1e4-41c2-aad8-f5fc0fb2d7af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AddSubtract.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmailSentModal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PriceCalculator.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PriceCalculator.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/skaiciuokle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netlify/functions/sendMail.js" beforeDir="false" afterPath="$PROJECT_DIR$/netlify/functions/sendMail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PriceCalculator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PriceCalculator.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +77,7 @@
       <workItem from="1626972391498" duration="294000" />
       <workItem from="1626975422068" duration="4552000" />
       <workItem from="1627578569697" duration="11526000" />
-      <workItem from="1627729207915" duration="17100000" />
+      <workItem from="1627729207915" duration="17438000" />
     </task>
     <servers />
   </component>
