@@ -1,0 +1,147 @@
+@import '../assets/scss/mixins';
+
+$primary-color: #00005c; // Change color here. C'mon, try it!
+$text-color: mix(#000, $primary-color, 64%);
+
+.price-calculator {
+	display: flex;
+
+	&__radio-btn-container {
+		display: flex;
+		cursor: pointer;
+		font-weight: 500;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 0.375em;
+	}
+
+	&__radio-btn-input {
+		position: absolute;
+		left: -9999px;
+
+		&:checked + span {
+			background-color: mix(#fff, $primary-color, 84%);
+
+			&:before {
+				box-shadow: inset 0 0 0 0.4375em $primary-color;
+			}
+		}
+	}
+
+	&__title {
+		margin: 40px 0 20px;
+
+		&--mb-40 {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__area-display {
+		padding: 8px;
+		position: absolute;
+		background-color: #f8f8f8;
+		top: 0;
+	}
+
+	&__selection-display {
+		position: sticky;
+		padding: 20px;
+		height: fit-content;
+		top: 80px;
+		width: 100%;
+		margin-left: 80px;
+		background-color: #f8f8f8;
+	}
+
+	&__selection-display-title {
+		display: inline-block;
+	}
+
+	&__selection-display-non-price-info {
+		margin: 30px 0;
+	}
+
+	&__radio-btn-text {
+		display: flex;
+		align-items: center;
+		padding: 0.375em 0.75em 0.375em 0.375em;
+		border-radius: 99em; // or something higher...
+		transition: 0.25s ease;
+
+		&:hover {
+			background-color: mix(#fff, $primary-color, 84%);
+		}
+
+		&:before {
+			display: flex;
+			flex-shrink: 0;
+			content: "";
+			background-color: #fff;
+			width: 1.5em;
+			height: 1.5em;
+			border-radius: 50%;
+			margin-right: 0.375em;
+			transition: 0.25s ease;
+			box-shadow: inset 0 0 0 0.125em $primary-color;
+		}
+	}
+
+	&__radio-selection-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 14px;
+	}
+
+	&__radio-selection {
+		min-height: 110px;
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		padding: 20px 40px;
+		border: 1px solid var(--dark-color);
+		cursor: pointer;
+		transition: color 0.1s ease-in, background-color 0.1s ease-in;
+
+		&:hover,
+		&:focus,
+		&:checked {
+			background-color: var(--secondary-color);
+			color: var(--light-color);
+		}
+
+		&--active {
+			background-color: var(--secondary-color);
+			color: var(--light-color);
+		}
+
+		input {
+			display: none;
+		}
+
+		span {
+			margin-top: 16px;
+		}
+
+		svg {
+			width: 80px;
+			height: 80px;
+		}
+	}
+
+	&__interaction-container {
+		min-width: 50%;
+	}
+
+	@include up-to-medium-large {
+		flex-direction: column;
+
+		&__radio-selection-container {
+			grid-template-columns: 1fr;
+		}
+
+		&__selection-display {
+			margin: 40px 0 0 0;
+		}
+	}
+}

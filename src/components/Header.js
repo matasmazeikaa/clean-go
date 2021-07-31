@@ -19,7 +19,7 @@ const Header = () => {
           <Link className="header__nav-link" to="/apie-mus">Apie mus</Link>
           <Link className="header__nav-link" to="/kontaktai">Kontaktai</Link>
         </nav>
-        <Button title="Skaičiuoklė" className="header__button"/>
+        <Link className="header__nav-link" to="/skaiciuokle">Skaičiuoklė</Link>
       <div
         className={`header__menu-btn ${isMenuOpen ? "closer" : null}`}
         onClick={toggleMenu}

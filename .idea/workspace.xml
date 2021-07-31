@@ -14,68 +14,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373a1127-d1e4-41c2-aad8-f5fc0fb2d7af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/netlify/functions/sendMail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/sendMailApi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/aukstos_klases_aptarnavimas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/baldu_cheminis_valymas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/bazinis_valymas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/biuras.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/butas-01.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/butas-02.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/butas-03.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/butas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/cleaning-team.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/konfidenciolumas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/konkurencinga_kaina.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/kotedzas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/langu_valymas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/namas-01.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/namas-02.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/namas-03.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/namas-04.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/namas-05.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/namas-06.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/namas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/parduotuve.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/patikimumas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/periodinis_valymas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/postatybinis_valymas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/prof_paslauga.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/sandelis.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/sporto_klubas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AboutUs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Kontaktai.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/apie-mus.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/kontaktai.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AddSubtract.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmailSentModal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PriceCalculator.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PriceCalculator.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/skaiciuokle.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netlify/functions/sendMail.js" beforeDir="false" afterPath="$PROJECT_DIR$/netlify/functions/sendMail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OrderModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/floor-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/floor-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/floor-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/hero-image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/house-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/house-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/house-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/house-4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/house-5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/house-6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/Hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/HeroRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/HeroRegister.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/HeroRegister.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/HeroRegister.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection3.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection4.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +58,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -137,7 +86,8 @@
       <workItem from="1621014808376" duration="11512000" />
       <workItem from="1626972391498" duration="294000" />
       <workItem from="1626975422068" duration="4552000" />
-      <workItem from="1627578569697" duration="11201000" />
+      <workItem from="1627578569697" duration="11526000" />
+      <workItem from="1627729207915" duration="17100000" />
     </task>
     <servers />
   </component>
