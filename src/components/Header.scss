@@ -1,4 +1,4 @@
-@import '../assets/scss/mixins';
+@import "../assets/scss/mixins";
 
 .header {
 	display: flex;
@@ -12,6 +12,57 @@
 	&__nav-container {
 	}
 
+	&__additional-menu {
+		position: absolute;
+		background-color: #f8f8f8;
+		padding: 20px;
+		display: flex;
+
+		div {
+			width: 300px;
+
+			&:not(:last-child) {
+				margin-right: 24px;
+			}
+
+			a {
+				display: block;
+			}
+		}
+	}
+
+	&__additional-menu-cleaning-type {
+		cursor: pointer;
+		color: var(--dark-color);
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		transition: color 0.1s ease-in;
+
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+
+		svg {
+			width: 16px;
+			height: 16px;
+		}
+
+		&--active {
+			color: var(--primary-color);
+		}
+
+		&:hover {
+			color: var(--primary-color);
+		}
+	}
+
+	&__additional-menu-wrapper {
+		position: relative;
+		display: inline-block;
+	}
+
 	&__nav-link {
 		display: inline-block;
 		margin-left: 60px;
@@ -21,11 +72,10 @@
 
 		&:after {
 			display: block;
-			content: '';
+			content: "";
 			border-bottom: solid 2px var(--light-color);
 			transform: scaleX(0);
 			transition: transform 250ms ease-in-out;
-
 		}
 
 		&:hover:after {
@@ -66,7 +116,7 @@
 		transition: all 450ms ease-in-out;
 
 		&.closer {
-			background-color: #E76E81;
+			background-color: #e76e81;
 
 			&:nth-child(1) {
 				transform: rotate(45deg) translate(4px, 0px);
@@ -96,7 +146,7 @@
 		transition: all 500ms ease-in-out;
 
 		&.show {
-			background-color: #FEF7E1;
+			background-color: #fef7e1;
 			transform: translateX(0%);
 		}
 
@@ -109,17 +159,16 @@
 			a {
 				height: 30px;
 				text-decoration: none;
-				color: #EB4C54;
+				color: #eb4c54;
 				cursor: pointer;
 				transition: all 150ms ease-in-out;
 
 				&:hover {
-					color: #F28EBA;
+					color: #f28eba;
 				}
 			}
 		}
 	}
-
 
 	@include up-to-medium-large {
 		&__button {
@@ -138,5 +187,4 @@
 			display: block;
 		}
 	}
-;
 }

@@ -14,6 +14,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373a1127-d1e4-41c2-aad8-f5fc0fb2d7af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/CarrierSection.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CarrierSection.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/arrow-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/women-cleaning.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/karjera.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PriceCalculator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PriceCalculator.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +90,7 @@
       <workItem from="1626972391498" duration="294000" />
       <workItem from="1626975422068" duration="4552000" />
       <workItem from="1627578569697" duration="11526000" />
-      <workItem from="1627729207915" duration="17438000" />
+      <workItem from="1627729207915" duration="25740000" />
     </task>
     <servers />
   </component>

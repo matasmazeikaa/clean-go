@@ -1,0 +1,57 @@
+@import "../assets/scss/mixins";
+
+.carrier-section {
+	h1 {
+		color: var(--dark-color);
+		margin-bottom: 40px;
+	}
+
+	&__offers-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__offer-container {
+		display: grid;
+		grid-template-columns: 3fr 1fr 2fr;
+		grid-column-gap: 80px;
+		margin-bottom: 30px;
+		background-color: #f8f8f8;
+		padding: 20px 40px;
+	}
+
+	&__offer-info-container {
+		padding-top: 40px;
+	}
+
+	&__requirements-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 40px;
+	}
+
+	&__offer-image {
+		margin: 20px 0;
+		width: 200px;
+	}
+
+
+	@include up-to-medium-large {
+		&__offer-container {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@include up-to-medium {
+		&__requirements-container {
+			grid-template-columns: 1fr;
+		}
+
+		&__offer-title-button-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}

@@ -1,4 +1,5 @@
 import React from "react"
+import { useLocation } from "@reach/router"
 import {
   BIURO_VALYMAS,
   BUTO_VALYMAS,
@@ -46,6 +47,7 @@ const CLEANING_FREQUENCY = [FREQUENCY_ONCE, FREQUENCY_TWICE]
 const MAX_AREA = 600
 
 const PriceCalculator = () => {
+  const location = useLocation()
   const [cleaningType, setCleaningType] = React.useState(PERIODINIS)
   const [service, setService] = React.useState("")
   const [area, setArea] = React.useState([65])
@@ -293,6 +295,25 @@ const PriceCalculator = () => {
     }
   }
 
+  const setDefaultSelecitonByQueryParams = () => {
+    if (location.search === "") {
+      return
+    }
+
+    const params = new URLSearchParams(location.search)
+    const paramCleaningType = params.get("cleaningType")
+    const paramCleaningService = params
+      .get("cleaningService")
+      .replace(/\+/g, " ")
+
+    if (!paramCleaningType || !paramCleaningService) {
+      return
+    }
+
+    setCleaningType(paramCleaningType)
+    setService(paramCleaningService)
+  }
+
   React.useEffect(() => {
     adjustPrice()
   }, [
@@ -303,6 +324,10 @@ const PriceCalculator = () => {
     priceRange.min,
     priceRange.max,
   ])
+
+  React.useEffect(() => {
+    setDefaultSelecitonByQueryParams()
+  }, [])
 
   return (
     <div className="price-calculator">
