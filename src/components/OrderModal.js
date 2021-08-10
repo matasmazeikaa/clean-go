@@ -22,7 +22,8 @@ const customStyles = {
 const OrderModal = ({ closeModal, isModalOpen, selectedService }) => {
   const [formValues, setFormValues] = React.useState({
     name: "",
-    phone: ""
+    phone: "",
+    email: ''
   })
   
   const [isEmailSent, setIsEmailSent] = React.useState(false)
@@ -45,7 +46,8 @@ const OrderModal = ({ closeModal, isModalOpen, selectedService }) => {
   const resetFormValues = () => {
     setFormValues({
       name: "",
-      phone: ""
+      phone: "",
+      email: ''
     })
   }
   
@@ -53,10 +55,10 @@ const OrderModal = ({ closeModal, isModalOpen, selectedService }) => {
     setIsLoadingEmailSend(true)
     
     try {
-      await sendMailApi(JSON.stringify({
+      await sendMailApi({
         ...formValues,
         cleaningType: selectedService
-      }))
+      })
       setIsEmailSent(true)
       resetFormValues()
     } catch (e) {
@@ -107,6 +109,14 @@ const OrderModal = ({ closeModal, isModalOpen, selectedService }) => {
               onChange={onInputChange}
               name="phone"
               value={formValues.phone}
+            />
+            <Input
+              classNameContainer="order-modal__input order-modal__input--margin-bottom20"
+              className="order-modal__input"
+              label="El. paštas"
+              onChange={onInputChange}
+              name="email"
+              value={formValues.email}
             />
             <Button theme="secondary" title="Užsakyti" onClick={() => sendMail()} isLoading={isLoadingEmailSend} />
           </div>

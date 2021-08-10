@@ -1,5 +1,3 @@
-@import '../../assets/scss/mixins';
-
 .landing-section-2 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -13,8 +11,8 @@
 	}
 
 	&__icon {
-		width: 40px;
-		height: 40px;
+		width: 60px;
+		height: 60px;
 		margin-bottom: 8px;
 	}
 
@@ -55,6 +53,10 @@
 		&__images-container {
 			display: none;
 		}
+	}
+
+	@include up-to-medium {
+		padding-top: 600px;
 	}
 
 	@include up-to-xsmall {

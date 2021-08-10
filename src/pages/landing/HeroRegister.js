@@ -6,20 +6,23 @@ import Select from "react-select"
 import axios from "axios"
 import {
   BIURO_VALYMAS,
-  BUTO_VALYMAS, CHEMINIS_BALDU_VALYMAS,
-  GENERALINIS, KOMERCINIU_PATALPU_VALYMAS,
-  KOTEDZO_VALYMAS, LANGU_VALYMAS,
+  BUTO_VALYMAS,
+  CHEMINIS_BALDU_VALYMAS,
+  GENERALINIS,
+  KOMERCINIU_PATALPU_VALYMAS,
+  KOTEDZO_VALYMAS,
+  LANGU_VALYMAS,
   NAMO_VALYMAS,
   PERIODINIS,
-  POSTATYBINIS
+  POSTATYBINIS,
 } from "../../constants"
 import { sendMailApi } from "../../api/sendMailApi"
-
+import EmailSentModal from "../../components/EmailSentModal"
 
 const CLEANING_TYPES = [
   { value: PERIODINIS, label: PERIODINIS },
   { value: GENERALINIS, label: GENERALINIS },
-  { value: POSTATYBINIS, label: POSTATYBINIS }
+  { value: POSTATYBINIS, label: POSTATYBINIS },
 ]
 
 const SERVICES = [
@@ -29,74 +32,136 @@ const SERVICES = [
   { value: BIURO_VALYMAS, label: BIURO_VALYMAS },
   { value: KOMERCINIU_PATALPU_VALYMAS, label: KOMERCINIU_PATALPU_VALYMAS },
   { value: LANGU_VALYMAS, label: LANGU_VALYMAS },
-  { value: CHEMINIS_BALDU_VALYMAS, label: CHEMINIS_BALDU_VALYMAS }
+  { value: CHEMINIS_BALDU_VALYMAS, label: CHEMINIS_BALDU_VALYMAS },
 ]
 
 const HeroRegister = () => {
   const [inputData, setInputData] = React.useState({
     name: "",
-    phone: ""
+    phone: "",
+    email: ''
   })
   const [service, setService] = React.useState("")
   const [cleaningType, setCleaningType] = React.useState("")
-  
-  const onInputChange = React.useCallback((event) => {
-    console.log(event)
-    setInputData((prevState => ({
-      ...prevState,
-      [event.target.name]: event.target.value
-    })))
-  }, [inputData])
-  
+  const [isLoadingEmailSend, setLoadingEmailSend] = React.useState(false)
+  const [isEmailSentModalOpen, setIsEmailSentModalOpen] = React.useState(false)
+
+  const onInputChange = React.useCallback(
+    event => {
+      setInputData(prevState => ({
+        ...prevState,
+        [event.target.name]: event.target.value,
+      }))
+    },
+    [inputData]
+  )
+
+  const resetInputData = () => {
+    setInputData({
+      name: "",
+      phone: "",
+      email: ''
+    })
+    setService("")
+    setCleaningType("")
+  }
+
   const sendMail = React.useCallback(async () => {
-    if (inputData.name === "" || inputData.phone === "" || service === "" || cleaningType === "") {
+    console.log("hi")
+  
+    if (
+      inputData.name === "" ||
+      inputData.phone === "" ||
+      service === "" ||
+      cleaningType === ""
+    ) {
       return
     }
-    
-    const dataStringified = JSON.stringify({
-      ...inputData,
-      service,
-      cleaningType
-    })
-    
+
+
+    setLoadingEmailSend(true)
+
     try {
-      await sendMailApi(dataStringified)
+      await sendMailApi({
+        ...inputData,
+        service,
+        cleaningType,
+      })
+      resetInputData()
+      setIsEmailSentModalOpen(true)
     } catch (e) {
       console.log(e)
+    } finally {
+      setLoadingEmailSend(false)
     }
-  })
-  
+  }, [inputData.name, inputData.phone, service, cleaningType, inputData.email])
+
   const selectStyles = {
-    control: (provided) => ({
+    control: provided => ({
       ...provided,
-      minHeight: "52px",
+      minHeight: "55px",
       borderRadius: 0,
-      borderColor: "black"
-    })
+      borderColor: "black",
+    }),
   }
-  
+
   return (
     <div className="hero-register">
       <div className="input-container">
         <label>Valymo tipas:</label>
-        <Select label="Valymo tipas:" options={CLEANING_TYPES} styles={selectStyles} name="cleanType"
-                className="hero-register__input"
-                onChange={(option) => setCleaningType(option.value)} />
+        <Select
+          label="Valymo tipas:"
+          options={CLEANING_TYPES}
+          styles={selectStyles}
+          name="cleanType"
+          className="hero-register__input"
+          onChange={option => setCleaningType(option.value)}
+          value={cleaningType}
+        />
       </div>
-      <Input label="Vardas:" name="name" className="hero-register__input" onChange={onInputChange} />
+      <Input
+        label="Vardas:"
+        name="name"
+        className="hero-register__input"
+        onChange={onInputChange}
+        value={inputData.name}
+      />
       <div className="input-container">
         <label>Pasirinkite paslaugą:</label>
-        <Select label="Pasirinkite paslaugą:" options={SERVICES} styles={selectStyles} name="service"
-                className="hero-register__input"
-                onChange={(option) => setService(option.value)} />
+        <Select
+          label="Pasirinkite paslaugą:"
+          options={SERVICES}
+          styles={selectStyles}
+          name="service"
+          className="hero-register__input"
+          onChange={option => setService(option.value)}
+          value={service}
+        />
       </div>
-      <Input label="Telefono numeris:" name="phone" isInputContainer className="hero-register__input"
-             onChange={onInputChange} />
+      <Input
+        label="Telefono numeris:"
+        name="phone"
+        isInputContainer
+        className="hero-register__input"
+        onChange={onInputChange}
+        value={inputData.phone}
+      />
+      <Input
+        label="El. paštas:"
+        name="email"
+        className="hero-register__input"
+        onChange={onInputChange}
+        value={inputData.email}
+      />
       <Button
         className="hero-register__button"
-        title="Užsisakyti"
         theme="primary"
         onClick={sendMail}
+        isLoading={isLoadingEmailSend}
+      >Užsisakyti</Button>
+      <EmailSentModal
+        isModalOpen={isEmailSentModalOpen}
+        closeModal={() => setIsEmailSentModalOpen(false)}
       />
     </div>
   )

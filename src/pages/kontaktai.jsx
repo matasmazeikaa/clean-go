@@ -11,13 +11,13 @@ const Kontaktai = () => {
         <h1 className="kontaktai__title">Kontaktai</h1>
         <div className="kontaktai__contact-container">
           <div>
-            <p>Telefonas: +37063151</p>
-            <p>El. paštas: info@cleango.lt</p>
+            <p>Telefonas: <strong>+37069009404</strong></p>
+            <p>El. paštas: <strong>info@cleango.lt</strong></p>
           </div>
           <div>
             <p>UAB "CleanGo"</p>
-            <p>Įm. k.: 305052153</p>
-            <p>Adresas: Eisiškių sodų 4-oji 18</p>
+            <p>Įm. k.: <strong>305052153</strong></p>
+            <p>Adresas: <strong>Eisiškių sodų 4-oji 18, Vilnius</strong></p>
           </div>
         </div>
       </Section>

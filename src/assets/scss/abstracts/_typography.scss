@@ -1,0 +1,173 @@
+@mixin h1 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+	color: $white;
+
+  &--margin-0 {
+    margin: 0;
+  }
+
+  @include up-to-medium {
+    font-size: 2.8rem;
+    margin: 0 0 1.6rem 0;
+
+    &--size-40 {
+      font-size: 2.4rem;
+    }
+
+    &--margin-0 {
+      margin: 0;
+    }
+  }
+}
+
+@mixin h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.4rem;
+
+  &--margin-bottom-48 {
+    margin-bottom: 4.8rem;
+  }
+
+  @include up-to-medium {
+    font-size: 2.4rem;
+
+    &--margin-bottom-48 {
+      margin-bottom: 3.2rem;
+    }
+  }
+}
+
+@mixin h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+
+  &--white {
+    color: $white;
+  }
+
+  @include up-to-medium {
+    font-size: 1.8rem;
+  }
+}
+
+@mixin h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+
+  &--white {
+    color: $white;
+  }
+
+  @include up-to-medium {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin h5 {
+	font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.3;
+
+  @include up-to-medium {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin h6 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+
+  &--white {
+    color: $white;
+  }
+
+  @include up-to-medium {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin body-1 {
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.2rem;
+  margin-bottom: 3.2rem;
+  color: $dark-grey-400;
+
+  &--white {
+    color: $white;
+  }
+
+  &--no-margin {
+    margin: 0;
+  }
+
+  @include up-to-medium {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
+
+@mixin body-2 {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.9;
+  color: $dark-grey-400;
+
+  &--white {
+    color: $white;
+  }
+
+  &--dark-grey-200 {
+    color: $dark-grey-200;
+  }
+}
+
+@mixin caption {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin label {
+  display: inline-block;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6rem;
+  letter-spacing: 0.16em;
+  color: $dark-grey-500;
+  margin-bottom: .2rem;
+  text-transform: uppercase;
+
+  @include up-to-medium {
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+  }
+}
+
+@mixin ul {
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.2rem;
+  margin-bottom: 3.2rem;
+  color: $dark-grey-400;
+
+  @include up-to-medium {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}

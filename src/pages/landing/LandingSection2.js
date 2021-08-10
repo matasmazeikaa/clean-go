@@ -20,17 +20,13 @@ const LandingSection2 = () => (
       <StaticImage
         className="landing-section-2__image-1"
         src="../../images/landing-section-2-img-1.jpg"
-        width={300}
         quality={95}
-        formats={["AUTO", "WEBP", "AVIF"]}
         alt="Valo stalą su chemikalais"
       />
       <StaticImage
         className="landing-section-2__image-2"
         src="../../images/landing-section-2-img-2.jpg"
-        width={300}
         quality={95}
-        formats={["AUTO", "WEBP", "AVIF"]}
         alt="Siurbliuoja pritrupintą kilimą"
       />
     </div>

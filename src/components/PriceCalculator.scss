@@ -1,5 +1,3 @@
-@import '../assets/scss/mixins';
-
 $primary-color: #00005c; // Change color here. C'mon, try it!
 $text-color: mix(#000, $primary-color, 64%);
 
@@ -130,7 +128,14 @@ $text-color: mix(#000, $primary-color, 64%);
 	}
 
 	&__interaction-container {
-		min-width: 50%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 16px;
+		width: 50%;
+
+		input {
+			width: 100%;
+		}
 	}
 
 	@include up-to-medium-large {

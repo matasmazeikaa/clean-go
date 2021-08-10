@@ -1,5 +1,3 @@
-@import '../../assets/scss/mixins';
-
 .landing-section-5 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -43,6 +41,12 @@
 	&__rec-img {
 		margin-right: 24px;
 		border-radius: 50%;
+		width: 200px;
+		height: 140px;
+	}
+
+	&__recomendation-info {
+		width: 100%;
 	}
 
 	&__rec-title {
@@ -52,6 +56,7 @@
 
 	&__rec-paragraph {
 		color: var(--light-color);
+		font-size: 1rem;
 	}
 
 	&__rec-date {

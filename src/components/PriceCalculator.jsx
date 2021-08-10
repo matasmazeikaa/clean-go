@@ -108,10 +108,9 @@ const PriceCalculator = () => {
   const handleUserOrder = React.useCallback(async () => {
     setIsLoadingUserOrder(true)
 
-    const mail = `<strong>Name: </strong> ${userData.name} <br /> <strong>Numeris: </strong> +370${userData.phone} <br /> <strong>El. paštas: </strong> ${userData.email} <br /> <strong>Valymo tipas: </strong> ${cleaningType} <br /> <strong>Paslauga: </strong> ${service} <br /> <strong>Plotas: </strong> ${area} m2 <br /> <strong>Valymo dažnumas: </strong> ${cleaningFrequency}`
 
     try {
-      await sendMailApi(JSON.stringify({ mail }))
+      await sendMailApi({ ...userData, priceRange, area, currentPrice, cleaningFrequency,cleaningType })
       resetUserData()
       setIsEmailSentModalOpen(true)
     } catch (error) {
@@ -126,6 +125,9 @@ const PriceCalculator = () => {
     cleaningFrequency,
     cleaningType,
     service,
+    area,
+    currentPrice,
+    priceRange
   ])
 
   const changeIsOrdering = React.useCallback(

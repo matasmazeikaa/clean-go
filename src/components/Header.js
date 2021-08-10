@@ -1,20 +1,23 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import "./Header.scss"
-import Button from "./Button.js"
+import Button from "./Button"
 import Logo from "./Logo"
 import ReactTooltip from "react-tooltip"
 import ArrowRight from "../images/arrow-right.svg"
 import cx from "classnames"
 import {
   BIURO_VALYMAS,
-  BUTO_VALYMAS, GENERALINIS,
+  BUTO_VALYMAS,
+  GENERALINIS,
   KOMERCINIU_PATALPU_VALYMAS,
   LANGU_VALYMAS,
   NAMO_VALYMAS,
   PERIODINIS,
-  POSTATYBINIS
+  POSTATYBINIS,
 } from "../constants"
+import Collapsible from "react-collapsible"
+import Collapsable from "./Collapsable"
 
 const CLEANING_SERVICES = [
   BUTO_VALYMAS,
@@ -37,6 +40,16 @@ const Header = () => {
     setIsAdditionalPaslaugosMenuVisible,
   ] = React.useState(false)
 
+  const [
+    isMobileMenuSubsectionVisible,
+    setMobileMenuSubsectionVisible,
+  ] = React.useState({
+    1: false,
+    2: false,
+    3: false,
+    4: false,
+  })
+
   const [selectedCleaningType, setSelectedCleaningType] = React.useState(
     BUTO_VALYMAS
   )
@@ -55,9 +68,28 @@ const Header = () => {
     )}`
   }
 
+  const handleMobileMenuSubsectionClick = React.useCallback(
+    async menu => () => {
+      const newMenu = {
+        1: false,
+        2: false,
+        3: false,
+        4: false,
+      }
+
+      setMobileMenuSubsectionVisible(prevMenuState => ({
+        ...newMenu,
+        [menu]: !prevMenuState[menu],
+      }))
+    },
+    []
+  )
+
   const toggleMenu = React.useCallback(() => {
     setMenuOpen(prevMenuOpen => !prevMenuOpen)
   }, [])
+
+  const makeCollapsable = (title, items) => items.map(item => ({}))
 
   return (
     <header className="header">
@@ -127,7 +159,11 @@ const Header = () => {
           Karjera
         </Link>
       </nav>
-      <Button to="/skaiciuokle" title="Skaičiuoklė" />
+      <Button
+        to="/skaiciuokle"
+        title="Skaičiuoklė"
+        className="header__button"
+      />
       <div
         className={`header__menu-btn ${isMenuOpen ? "closer" : null}`}
         onClick={toggleMenu}
@@ -139,10 +175,44 @@ const Header = () => {
       <div className="header__mobile">
         <div className={`header__menu-overlay ${isMenuOpen ? "show" : null}`}>
           <nav>
-            <a href="#">Cool thing to click</a>
-            <a href="#">An even cooler thing to click</a>
-            <a href="#">Some more stuff to click</a>
+            <Link className="header__nav-link" to="/apie-mus">
+              Apie mus
+            </Link>
+            <Link className="header__nav-link" to="/kontaktai">
+              Kontaktai
+            </Link>
+            <Link className="header__nav-link" to="/karjera">
+              Karjera
+            </Link>
+
           </nav>
+          {
+            <div className="header__mobile-collapsable-menu-wrapper">
+              <Collapsable
+                title="Periodinis"
+                collapsedItems={CLEANING_SERVICES}
+              />
+              <Collapsable
+                title="Generalinis"
+                collapsedItems={CLEANING_SERVICES}
+              />
+              <Collapsable
+                title="Postatybinis"
+                collapsedItems={CLEANING_SERVICES}
+              />
+              <Collapsable
+                title="Langų valymas"
+                collapsedItems={CLEANING_SERVICES}
+              />
+            </div>
+          }
+          <Button
+            to="/skaiciuokle"
+            className="header__button-mobile"
+          >
+            Skaičiuoklė
+          </Button>
+
         </div>
       </div>
     </header>

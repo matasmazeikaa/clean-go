@@ -2,7 +2,6 @@ import * as React from "react"
 import Section from "../../components/Section"
 import "./LandingSection6.scss"
 import ChevronDown from "../../images/chevron-down.svg"
-import Collapsible from "react-collapsible"
 import Collapse from "@kunukn/react-collapse"
 
 const COLLAPSIBLES = [

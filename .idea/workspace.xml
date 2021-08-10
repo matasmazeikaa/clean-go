@@ -13,21 +13,49 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="373a1127-d1e4-41c2-aad8-f5fc0fb2d7af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CarrierSection.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CarrierSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/arrow-right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/women-cleaning.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/karjera.jsx" afterDir="false" />
+    <list default="true" id="373a1127-d1e4-41c2-aad8-f5fc0fb2d7af" name="Default Changelist" comment="Carrier page, linking to skaiciuokle from paslaugos">
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/abstracts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/abstracts/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/abstracts/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/global/_global-typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/scss/global/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Loader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Loader.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/sendMailApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/sendMailApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/abstracts/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CarrierSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarrierSection.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Logo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OrderModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OrderModal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderModal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PriceCalculator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PriceCalculator.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PriceCalculator.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PriceCalculator.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Section.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/landing/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/Hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/landing/HeroRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/HeroRegister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/landing/HeroRegister.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/HeroRegister.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection4.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection5.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/landing/LandingSection6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/LandingSection6.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +83,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -67,6 +95,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -90,7 +119,8 @@
       <workItem from="1626972391498" duration="294000" />
       <workItem from="1626975422068" duration="4552000" />
       <workItem from="1627578569697" duration="11526000" />
-      <workItem from="1627729207915" duration="25740000" />
+      <workItem from="1627729207915" duration="28121000" />
+      <workItem from="1628519711956" duration="7382000" />
     </task>
     <servers />
   </component>
@@ -108,6 +138,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Carrier page, linking to skaiciuokle from paslaugos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Carrier page, linking to skaiciuokle from paslaugos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

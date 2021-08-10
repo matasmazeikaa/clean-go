@@ -26,47 +26,41 @@ const LandingSection5 = () => {
       <div className="landing-section-5__recomendation-container">
         <StaticImage
           className="landing-section-5__rec-img"
-          src="../../images/landing-section-2-img-2.jpg"
-          width={60}
+          src="../../images/hannah.jpg"
           quality={95}
-          formats={["AUTO", "WEBP", "AVIF"]}
           alt="Siurbliuoja pritrupintą kilimą"
         />
-        <div>
-          <h4 className="landing-section-5__rec-title">Jonas Jonauskas</h4>
-          <p className="landing-section-5__rec-paragraph">Rekomenduoju</p>
+        <div className="landing-section-5__recomendation-info">
+          <h4 className="landing-section-5__rec-title">-Agnė</h4>
+          <p className="landing-section-5__rec-paragraph">Įsiklausė į mano pageidavimus, patarė ir pasiūlė optimaliausią variantą. Tiesiog puikiai atliko darbą.</p>
+        </div>
+        <p className="landing-section-5__rec-date">4 Rugpjūčio 2021</p>
+      </div>
+      <div className="landing-section-5__recomendation-container">
+        <StaticImage
+          className="landing-section-5__rec-img"
+          src="../../images/tom.jpg"
+          quality={95}
+          alt="Siurbliuoja pritrupintą kilimą"
+        />
+        <div className="landing-section-5__recomendation-info">
+          <h4 className="landing-section-5__rec-title">-Tomas</h4>
+          <p className="landing-section-5__rec-paragraph">Pirmą kartą pabandžiau išsikviesti į namus valymo paslaugas atliekančią įmonę ir nenusivyliau. Rekomenduoju ir kitiems pasinaudoti šios puikios komandos paslaugomis.</p>
+        </div>
+        <p className="landing-section-5__rec-date">2 Birželio 2021</p>
+      </div>
+      <div className="landing-section-5__recomendation-container">
+        <StaticImage
+          className="landing-section-5__rec-img"
+          src="../../images/Ieva.jpg"
+          quality={95}
+          alt="Siurbliuoja pritrupintą kilimą"
+        />
+        <div className="landing-section-5__recomendation-info">
+          <h4 className="landing-section-5__rec-title">-Ieva</h4>
+          <p className="landing-section-5__rec-paragraph">Rekomenduoju, nes dirba greitai ir kokybiškai. Mano visas namas tiesiog blizga!</p>
         </div>
         <p className="landing-section-5__rec-date">17 Liepos 2021</p>
-      </div>
-      <div className="landing-section-5__recomendation-container">
-        <StaticImage
-          className="landing-section-5__rec-img"
-          src="../../images/landing-section-2-img-2.jpg"
-          width={60}
-          quality={95}
-          formats={["AUTO", "WEBP", "AVIF"]}
-          alt="Siurbliuoja pritrupintą kilimą"
-        />
-        <div>
-          <h4 className="landing-section-5__rec-title">Tomas Tomauskas</h4>
-          <p className="landing-section-5__rec-paragraph">Rekomenduoju</p>
-        </div>
-        <p className="landing-section-5__rec-date">17 Rugsėjo 2021</p>
-      </div>
-      <div className="landing-section-5__recomendation-container">
-        <StaticImage
-          className="landing-section-5__rec-img"
-          src="../../images/landing-section-2-img-2.jpg"
-          width={60}
-          quality={95}
-          formats={["AUTO", "WEBP", "AVIF"]}
-          alt="Siurbliuoja pritrupintą kilimą"
-        />
-        <div>
-          <h4 className="landing-section-5__rec-title">Linas Linauskas</h4>
-          <p className="landing-section-5__rec-paragraph">Rekomenduoju</p>
-        </div>
-        <p className="landing-section-5__rec-date">17 Rugpjūčio 2021</p>
       </div>
     </div>
     <OrderModal isModalOpen={isOrderModalOpen} closeModal={closeOrderModal}/>

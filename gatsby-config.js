@@ -28,13 +28,24 @@ module.exports = {
 				icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
 			},
 		},
-		`gatsby-plugin-gatsby-cloud`,
-		{
-			resolve: 'gatsby-plugin-sass',
-			additionalData: {
-				data: `@import "${__dirname}/src/assets/scss/_variables.scs";`,
-			},
-		},
+    {
+      resolve: 'gatsby-plugin-google-fonts-v2',
+      options: {
+        fonts: [
+          {
+            family: 'Rubik',
+            weights: ['400', '700'],
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        additionalData: `@import "${__dirname}/src/assets/scss/abstracts";`,
+      },
+    },
 		{
 			resolve: 'gatsby-plugin-react-svg',
 			options: {

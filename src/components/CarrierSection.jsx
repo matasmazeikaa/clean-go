@@ -15,7 +15,7 @@ const CarrierSection = ({ jobOffers }) => {
               <div className="carrier-section__offer-title-button-container">
                 <h3>{offer.title}</h3>
                 <StaticImage
-                  src="../images/women-cleaning.jpg"
+                  src="../images/woman-cleaning.jpg"
                   className="carrier-section__offer-image"
                   width={300}
                   quality={95}

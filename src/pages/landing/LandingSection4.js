@@ -25,9 +25,9 @@ const LandingSection4 = () => {
     setActiveButton(value)
   }, [])
   
-  const openModalAndSetService = (service) => {
+  const openModalAndSetService = (service, area, price) => {
     setIsOrderModalOpen(true)
-    setSelectedService(service)
+    setSelectedService(service);
   }
   
   return (
