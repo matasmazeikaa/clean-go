@@ -39,7 +39,7 @@ const HeroRegister = () => {
   const [inputData, setInputData] = React.useState({
     name: "",
     phone: "",
-    email: ''
+    email: "",
   })
   const [service, setService] = React.useState("")
   const [cleaningType, setCleaningType] = React.useState("")
@@ -60,7 +60,7 @@ const HeroRegister = () => {
     setInputData({
       name: "",
       phone: "",
-      email: ''
+      email: "",
     })
     setService("")
     setCleaningType("")
@@ -68,24 +68,23 @@ const HeroRegister = () => {
 
   const sendMail = React.useCallback(async () => {
     console.log("hi")
-  
+
     if (
       inputData.name === "" ||
       inputData.phone === "" ||
-      service === "" ||
-      cleaningType === ""
+      service.value === "" ||
+      cleaningType.value === ""
     ) {
       return
     }
-
 
     setLoadingEmailSend(true)
 
     try {
       await sendMailApi({
         ...inputData,
-        service,
-        cleaningType,
+        service: service.value,
+        cleaningType: cleaningType.value,
       })
       resetInputData()
       setIsEmailSentModalOpen(true)
@@ -115,7 +114,7 @@ const HeroRegister = () => {
           styles={selectStyles}
           name="cleanType"
           className="hero-register__input"
-          onChange={option => setCleaningType(option.value)}
+          onChange={option => setCleaningType(option)}
           value={cleaningType}
         />
       </div>
@@ -134,7 +133,7 @@ const HeroRegister = () => {
           styles={selectStyles}
           name="service"
           className="hero-register__input"
-          onChange={option => setService(option.value)}
+          onChange={option => setService(option)}
           value={service}
         />
       </div>
@@ -158,7 +157,9 @@ const HeroRegister = () => {
         theme="primary"
         onClick={sendMail}
         isLoading={isLoadingEmailSend}
-      >Užsisakyti</Button>
+      >
+        Užsisakyti
+      </Button>
       <EmailSentModal
         isModalOpen={isEmailSentModalOpen}
         closeModal={() => setIsEmailSentModalOpen(false)}
