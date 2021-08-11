@@ -3,6 +3,10 @@
 	width: 180px;
 	display: flex;
 
+	svg {
+		height: auto;
+	}
+
 	@include up-to-medium {
 		width: 120px;
 	};

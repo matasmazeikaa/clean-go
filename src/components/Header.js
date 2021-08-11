@@ -107,17 +107,18 @@ const Header = () => {
             <div className="header__additional-menu">
               <div>
                 {CLEANING_SERVICES.map(service => (
-                  <p
+                  <Link
                     onMouseOver={handleCleaningTypeChange(service, true)}
                     className={cx({
                       "header__additional-menu-cleaning-type": true,
                       "header__additional-menu-cleaning-type--active":
                         selectedCleaningType === service,
                     })}
+                    to={getAdditionalServiceLink(PERIODINIS)}
                   >
                     {service}
                     <ArrowRight />
-                  </p>
+                  </Link>
                 ))}
               </div>
               <div>

@@ -33,7 +33,7 @@
 		cursor: pointer;
 		color: var(--dark-color);
 		text-decoration: none;
-		display: flex;
+		display: flex !important;
 		align-items: center;
 		justify-content: space-between;
 		transition: color 0.1s ease-in;
