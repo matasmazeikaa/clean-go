@@ -187,6 +187,8 @@
 	}
 
 	@include up-to-medium-large {
+		padding: 20px var(--main-padding-left-right);
+
 		&__button:not(.s) {
 			display: none;
 		}

@@ -4,10 +4,14 @@
 	display: flex;
 
 	svg {
-		height: auto;
+		height: 50px;
 	}
 
 	@include up-to-medium {
 		width: 120px;
+
+		svg {
+			height: 35px;
+		}
 	};
 }
