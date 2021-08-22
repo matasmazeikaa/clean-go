@@ -3,7 +3,7 @@ import { useLocation } from "@reach/router"
 import {
   BIURO_VALYMAS,
   BUTO_VALYMAS,
-  CHEMINIS_BALDU_VALYMAS,
+  CHEMINIS_BALDU_VALYMAS, FASADU_VALYMAS,
   FREQUENCY_FIVE,
   FREQUENCY_ONCE,
   FREQUENCY_THRICE,
@@ -19,7 +19,7 @@ import {
   ORKAITES_VALYMAS,
   PERIODINIS,
   POSTATYBINIS,
-  SALDYTUVO_VALYMAS,
+  SALDYTUVO_VALYMAS
 } from "../constants"
 import { Range } from "react-range"
 import AddSubtract from "./AddSubtract"
@@ -33,7 +33,7 @@ import Input from "./Input"
 import { sendMailApi } from "../api/sendMailApi"
 import EmailSentModal from "./EmailSentModal"
 
-const CLEANING_TYPES = [PERIODINIS, GENERALINIS, POSTATYBINIS, LANGU_VALYMAS]
+const CLEANING_TYPES = [PERIODINIS, GENERALINIS, POSTATYBINIS, LANGU_VALYMAS, FASADU_VALYMAS]
 
 const SERVICES = [
   { value: BUTO_VALYMAS, icon: "../images/butas-03.svg" },
@@ -280,6 +280,16 @@ const PriceCalculator = () => {
 
       changePriceRange(minStepsPrice, maxStepsPrice)
     }
+  
+    if (cleaningType === FASADU_VALYMAS) {
+      const MIN_STEP_PRICE = 0.8
+      const MAX_STEP_PRICE = 1.5;
+
+      const minStepsPrice = (580 + area[0] - MAX_AREA) * MIN_STEP_PRICE + 16
+      const maxStepsPrice = (580 + area[0] - MAX_AREA) * MAX_STEP_PRICE + 40
+
+      changePriceRange(minStepsPrice, maxStepsPrice)
+    }
   }
 
   const serviceIcon = service => {
@@ -350,7 +360,7 @@ const PriceCalculator = () => {
               <span className="price-calculator__radio-btn-text">{type}</span>
             </label>
           ))}
-          {cleaningType !== LANGU_VALYMAS && (
+          {cleaningType !== LANGU_VALYMAS && cleaningType !== FASADU_VALYMAS &&(
             <>
               <h3 className="price-calculator__title">
                 2. Pasirinkite paslaugą:

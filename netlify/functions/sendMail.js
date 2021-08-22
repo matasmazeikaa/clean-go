@@ -1,8 +1,14 @@
-const sgMail = require("@sendgrid/mail")
+const nodemailer = require("nodemailer");
 
-const TEST_API =
-  "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"
-//ES6
+let transporter = nodemailer.createTransport({
+  host: "smtp.titan.email",
+  port: 465,
+  secure: true, // true for 465, false for other ports
+  auth: {
+    user: process.env.EMAIL, // generated ethereal user
+    pass: process.env.EMAIL_PASSWORD, // generated ethereal password
+  },
+});
 
 const headers = {
   "Access-Control-Allow-Origin": "*",
@@ -11,34 +17,29 @@ const headers = {
 }
 
 const sendMail = emailData => {
-  const html =
-    emailData.mail ||
-    `<p><strong>Vardas: </strong>${emailData.name} <br /> ${
-      emailData.cleaningType
-        ? `<strong>Valymo tipas:</strong> ${emailData.cleaningType} <br />`
-        : ""
-    } ${
-      emailData.service
-        ? `<strong>Paslauga:</strong> ${emailData.service} <br />`
-        : ""
-    }  <strong>Telefonas</strong>: <a href='tel:+370${emailData.phone}'>+370${
-      emailData.phone
-    }</a> </p>`
-  const msg = {
-    to: "info@cleango.lt",
-    from: "info@cleango.lt", // Use the email address or domain you verified above
-    subject: "Naujas užsakymas!",
-    text: "Naujas klientas!",
-    html,
-  }
-  console.log(msg, "Messgage")
-  sgMail.setApiKey(TEST_API)
-
+  const {
+    name,
+    email,
+    cleaningType,
+    service,
+    phone,
+    area,
+    currentPrice,
+    priceRange = {min: null, max: null},
+    cleaningFrequency
+  } = emailData;
+  
+  const html = `<h1>Kontaktai</h1> <strong>Vardas: </strong> ${name || '-'} </br> <strong>Telefonas: </strong> +370${phone || ''} <br /> <strong>El. paštas: </strong> ${email || ''} <br/> <br/> <h1>Paslaugos</h1>  <strong>Valymo tipas:</strong> ${cleaningType || '-'} </br> <strong>Paslauga: </strong> ${service || '-'} <br/> <strong>Plotas: </strong> ${area || '-'}m2 </br> <strong>Valymo dažnumas: </strong> ${cleaningFrequency || '-'} <br/> <strong>Preliminari kaina: </strong> ${priceRange.min ? `${priceRange.min}-${priceRange.max}` : !!currentPrice ? currentPrice : '-' }eur`;
+  
   try {
-    return sgMail.send(msg)
+    return transporter.sendMail({
+      from: 'info@cleango.lt', // sender address
+      to: "info@cleango.lt", // list of receivers
+      subject: "Užsakymas ✔", // Subject line
+      text: "Užsakymas", // plain text body
+      html, // html body
+    });
   } catch (error) {
-    console.log(error)
-    console.log("dasdasd")
     throw error
 
     if (error.response) {
@@ -49,7 +50,7 @@ const sendMail = emailData => {
 
 exports.handler = async (event, context) => {
   const requestBody = JSON.parse(event.body)
-  console.log(!!requestBody.cleaningType)
+
   try {
     const emailResponse = await sendMail(requestBody)
 

@@ -8,13 +8,13 @@ import ArrowRight from "../images/arrow-right.svg"
 import cx from "classnames"
 import {
   BIURO_VALYMAS,
-  BUTO_VALYMAS,
+  BUTO_VALYMAS, FASADU_VALYMAS,
   GENERALINIS,
   KOMERCINIU_PATALPU_VALYMAS,
   LANGU_VALYMAS,
   NAMO_VALYMAS,
   PERIODINIS,
-  POSTATYBINIS,
+  POSTATYBINIS
 } from "../constants"
 import Collapsible from "react-collapsible"
 import Collapsable from "./Collapsable"
@@ -145,6 +145,12 @@ const Header = () => {
                   to={getAdditionalServiceLink(LANGU_VALYMAS)}
                 >
                   Langų valymas
+                </Link>
+                <Link
+                  className="header__additional-menu-cleaning-type"
+                  to={getAdditionalServiceLink(FASADU_VALYMAS)}
+                >
+                  Fasadų valymas
                 </Link>
               </div>
             </div>

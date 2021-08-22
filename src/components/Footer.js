@@ -70,7 +70,7 @@ const Footer = () => (
           title="Sezoninis langų valymas"
         />
         <GatsbyLink
-          to="/skaiciuokle?cleaningType=Langų%20valymas&cleaningService=Komercinių+patalpų+valymas"
+          to="/skaiciuokle?cleaningType=Fasadų%20valymas&cleaningService=Komercinių+patalpų+valymas"
           className="footer__link"
           title="Fasadų valymas"
         />
