@@ -14,9 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373a1127-d1e4-41c2-aad8-f5fc0fb2d7af" name="Default Changelist" comment="Carrier page, linking to skaiciuokle from paslaugos">
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/abstracts/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/abstracts/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -83,6 +84,8 @@
       <workItem from="1627729207915" duration="28121000" />
       <workItem from="1628519711956" duration="7382000" />
       <workItem from="1628607965330" duration="9191000" />
+      <workItem from="1629626727932" duration="2945000" />
+      <workItem from="1629720809069" duration="1080000" />
     </task>
     <servers />
   </component>

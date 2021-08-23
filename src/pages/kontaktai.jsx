@@ -11,8 +11,8 @@ const Kontaktai = () => {
         <h1 className="kontaktai__title">Kontaktai</h1>
         <div className="kontaktai__contact-container">
           <div>
-            <p>Telefonas: <strong>+37069009404</strong></p>
-            <p>El. paštas: <strong>info@cleango.lt</strong></p>
+            <p>Telefonas: <a href="tel:+37069009404">+37069009404</a></p>
+            <p>El. paštas: <a href="mailto:info@cleango.lt">info@cleango.lt</a></p>
           </div>
           <div>
             <p>UAB "CleanGo"</p>

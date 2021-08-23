@@ -53,10 +53,30 @@ module.exports = {
 					include: /images\/.*\.svg/,
 				}
 			}
-		}
-		
-		
-		// this (optional) plugin enables Progressive Web App + Offline functionality
+		},
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: process.env.GTM_ID,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        gtagConfig: {
+          optimize_id: process.env.GTAG_ID,
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
+    
+    
+    
+    // this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
 		// `gatsby-plugin-offline`,
 	],

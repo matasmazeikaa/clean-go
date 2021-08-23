@@ -85,7 +85,7 @@ const Footer = () => (
       <Section className="footer__bottom-footer">
         <Logo className="footer__logo" />
         <div className="footer__bottom-footer-links">
-          <p className="footer__bottom-footer-link">+37069009404</p>
+          <a className="footer__bottom-footer-link" href="tel:+37069009404">+37069009404</a>
           <p className="footer__bottom-footer-link footer__bottom-footer-link--max-width-180">
             Eisiškių sodų 4-oji 18, Vilnius
           </p>
