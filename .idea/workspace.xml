@@ -15,9 +15,8 @@
   <component name="ChangeListManager">
     <list default="true" id="373a1127-d1e4-41c2-aad8-f5fc0fb2d7af" name="Default Changelist" comment="Carrier page, linking to skaiciuokle from paslaugos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OrderModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/landing/HeroRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/landing/HeroRegister.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,9 @@
       <workItem from="1628519711956" duration="7382000" />
       <workItem from="1628607965330" duration="9191000" />
       <workItem from="1629626727932" duration="2945000" />
-      <workItem from="1629720809069" duration="1080000" />
+      <workItem from="1629720809069" duration="6797000" />
+      <workItem from="1629737983718" duration="27000" />
+      <workItem from="1629891311729" duration="670000" />
     </task>
     <servers />
   </component>

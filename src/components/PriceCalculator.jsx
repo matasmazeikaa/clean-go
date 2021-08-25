@@ -105,7 +105,9 @@ const PriceCalculator = () => {
     })
   }
 
-  const handleUserOrder = React.useCallback(async () => {
+  const handleUserOrder = React.useCallback(async (event) => {
+    event.preventDefault();
+
     setIsLoadingUserOrder(true)
 
 
@@ -445,7 +447,7 @@ const PriceCalculator = () => {
           )}
         </div>
       ) : (
-        <div className="price-calculator__interaction-container">
+        <form className="price-calculator__interaction-container" onSubmit={handleUserOrder} id="price-calculator-form">
           <Input
             label="Vardas:"
             name="name"
@@ -468,14 +470,14 @@ const PriceCalculator = () => {
           />
 
           <Button
-            onClick={handleUserOrder}
+            type="submit"
             title={isLoadingUserOrder ? "Loading..." : "Užsakyti"}
           />
           <EmailSentModal
             isModalOpen={isEmailSentModalOpen}
             closeModal={() => setIsEmailSentModalOpen(false)}
           />
-        </div>
+        </form>
       )}
 
       <div className="price-calculator__selection-display">

@@ -51,9 +51,11 @@ const OrderModal = ({ closeModal, isModalOpen, selectedService }) => {
     })
   }
   
-  const sendMail = async () => {
+  const sendMail = React.useCallback(async (event) => {
+    event.preventDefault();
+
     setIsLoadingEmailSend(true)
-    
+  
     try {
       await sendMailApi({
         ...formValues,
@@ -66,7 +68,7 @@ const OrderModal = ({ closeModal, isModalOpen, selectedService }) => {
     } finally {
       setIsLoadingEmailSend(false)
     }
-  }
+  }, [])
   
   return (
     <div className="order-modal">
@@ -89,7 +91,7 @@ const OrderModal = ({ closeModal, isModalOpen, selectedService }) => {
             </h4>
           </div>
         ) : (
-          <div className="order-modal__modal-content">
+          <form className="order-modal__modal-content" id="order-modal-form" onSubmit={sendMail}>
             <h4 className="order-modal__title has-text-center">
               Užpildykit formą ir mes jums paskambinsime
             </h4>
@@ -118,8 +120,8 @@ const OrderModal = ({ closeModal, isModalOpen, selectedService }) => {
               name="email"
               value={formValues.email}
             />
-            <Button theme="secondary" title="Užsakyti" onClick={() => sendMail()} isLoading={isLoadingEmailSend} />
-          </div>
+            <Button theme="secondary" title="Užsakyti" type="submit" isLoading={isLoadingEmailSend} />
+          </form>
         )}
       
       </Modal>

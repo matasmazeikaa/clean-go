@@ -66,8 +66,8 @@ const HeroRegister = () => {
     setCleaningType("")
   }
 
-  const sendMail = React.useCallback(async () => {
-    console.log("hi")
+  const sendMail = React.useCallback(async (e) => {
+    e.preventDefault()
 
     if (
       inputData.name === "" ||
@@ -105,8 +105,8 @@ const HeroRegister = () => {
   }
 
   return (
-    <div className="hero-register">
-      <div className="input-container">
+    <form className="hero-register" onSubmit={sendMail} id="main-page-hero-form">
+      <div className="input-container" >
         <label>Valymo tipas:</label>
         <Select
           label="Valymo tipas:"
@@ -154,8 +154,8 @@ const HeroRegister = () => {
       />
       <Button
         className="hero-register__button"
+        type="submit"
         theme="primary"
-        onClick={sendMail}
         isLoading={isLoadingEmailSend}
       >
         Užsisakyti
@@ -164,7 +164,7 @@ const HeroRegister = () => {
         isModalOpen={isEmailSentModalOpen}
         closeModal={() => setIsEmailSentModalOpen(false)}
       />
-    </div>
+    </form>
   )
 }
 
