@@ -1,0 +1,3 @@
+@function space($size) {
+	@return $size * $spacing;
+}

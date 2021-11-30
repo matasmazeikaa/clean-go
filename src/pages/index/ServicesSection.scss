@@ -1,0 +1,49 @@
+.services-section {
+	&__services {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	&__service {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		& > *:not(:last-child) {
+			margin-bottom: space(3);
+		}
+	}
+
+    &__service-title {
+        max-width: 24rem;
+		color: $text-dark;
+    }
+
+	&__checkmark-icon {
+		margin-right: 0.8rem;
+	}
+
+	&__service-type {
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-bottom: 0.8rem;
+		}
+	}
+
+	@include up-to-medium {
+		&__services {
+			flex-direction: column;
+		}
+
+		&__service {
+			margin-bottom: 4.2rem;
+
+			& > *:not(:last-child) {
+				margin-bottom: space(2);
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.default-section-header-mb {
+	margin-bottom: space(8);
+}
+
+.default-section-title-mb {
+	margin-bottom: space(3);
+}
+
+.mr-1 {
+	margin-right: space(1);
+}
+
+.text-dark {
+	color: $text-dark;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.subtext-maxwidth {
+	max-width: 80rem;
+}

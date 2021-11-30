@@ -1,39 +1,22 @@
-.input {
-	border: 1px solid var(--dark-color);
-	padding: 16px 24px;
-	display: block;
-	outline: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	font-size: 18px;
-
-	&--phone-input {
-		padding-left: 90px;
-	}
-}
-
 .input-container {
-	position: relative;
+	&__label {
+		color: $text-dark;
+		margin-bottom: space(1);
+		display: block;
+		font-size: 1.4rem;
+	}
 
-	&--phone-input {
-		&::before {
-			content: "+370";
-			font-size: 18px;
-			position: absolute;
-			color: #ACACAC;
-			padding: 0 15px;
-			border-right: 1px solid #000000;
-			height: 51px;
-			bottom: 0;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
-			align-items: center;
-			-webkit-transition: 0.3s;
-			transition: 0.3s;
+	&__input {
+		border: 1px solid $text-dark;
+		padding: space(1.5) space(2);
+		background-color: $white;
+		color: $text-dark;
+		border-radius: $border-radius;
+		width: 100%;
+		outline: none;
+
+		&:focus-visible {
+			box-shadow: 0 0 3pt 2pt $accent-secondary-hover;
 		}
 	}
 }

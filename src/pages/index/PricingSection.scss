@@ -1,0 +1,248 @@
+.pricing-section {
+	color: $neutral;
+
+	&__wrapper {
+		display: flex;
+	}
+
+	&__background {
+		background-color: $text-dark;
+		border-radius: $border-radius;
+		padding: space(5);
+	}
+
+	&__header-container {
+		text-align: center;
+		color: $neutral;
+	}
+
+	&__pricer-title {
+		font-weight: 700;
+		margin-bottom: space(1);
+	}
+
+	&__select-container-wrapper {
+		display: flex;
+		margin-bottom: space(4);
+	}
+
+	&__select-container {
+		padding: space(3) space(3);
+		background-color: $neutral;
+		min-width: 12rem;
+		border-radius: $border-radius;
+		cursor: pointer;
+		color: $text-dark;
+		transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+
+		&:not(:last-child) {
+			margin-right: space(4);
+		}
+
+		&--image {
+			padding: 0;
+			width: 120px;
+			height: 100px;
+			margin-bottom: space(1);
+		}
+
+		&--active {
+			background-color: $accent-primary;
+			color: $neutral;
+		}
+	}
+
+	&__radio-btn-container {
+		display: flex;
+		cursor: pointer;
+		font-weight: 500;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 0.375em;
+		margin-right: space(2);
+	}
+
+	&__frequency-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__radio-btn-input {
+		position: absolute;
+		left: -9999px;
+
+		&:checked + span {
+			background-color: mix(#fff, $accent-primary, 84%);
+			color: $text-dark;
+
+			&:before {
+				box-shadow: inset 0 0 0 0.4375em $accent-primary;
+			}
+		}
+	}
+
+	&__radio-btn-text {
+		display: flex;
+		align-items: center;
+		padding: 0.375em 0.75em 0.375em 0.375em;
+		border-radius: 99em; // or something higher...
+		transition: 0.25s ease;
+
+		&:hover {
+			background-color: mix(#fff, $accent-primary, 50%);
+			color: $text-dark;
+		}
+
+		&:before {
+			display: flex;
+			flex-shrink: 0;
+			content: '';
+			background-color: #fff;
+			width: 1.5em;
+			height: 1.5em;
+			border-radius: 50%;
+			margin-right: 0.375em;
+			transition: 0.25s ease;
+			box-shadow: inset 0 0 0 0.125em $accent-primary;
+		}
+	}
+
+	&__select-icon {
+		padding: 1.8rem;
+		width: 120px;
+		height: 100px;
+	}
+
+	&__price-container-wrapper {
+		align-self: center;
+		margin-left: auto;
+	}
+
+	&__price-container {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		margin-bottom: space(2);
+	}
+
+	&__price {
+		color: $accent-primary-hover;
+	}
+
+	@include up-to-medium-large {
+		&__wrapper {
+			flex-direction: column;
+		}
+
+		&__price-container-wrapper {
+			padding: 4.2rem 0;
+		}
+
+		&__select-container-wrapper {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+			grid-gap: 1.6rem;
+		}
+
+		&__select-container {
+			width: 100%;
+		}
+
+		&__select-container:not(:last-child) {
+			margin: 0;
+			margin-right: 0;
+		}
+	}
+
+	@include up-to-medium {
+		padding-left: 0;
+		padding-right: 0;
+
+		&__pricer-title {
+			&--slider {
+				margin-bottom: 2.2rem;
+			}
+		}
+	}
+}
+
+.slidecontainer {
+	max-width: 60rem; /* Width of the outside container */
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	&::after {
+		content: '';
+		width: 0;
+		height: 0;
+		border-top: 1rem solid transparent;
+		border-bottom: 1rem solid transparent;
+
+		border-right: 1rem solid $neutral;
+		position: absolute;
+		right: 9.3rem;
+	}
+
+	@include up-to-medium {
+		flex-direction: column;
+
+		&::after {
+			display: none;
+		}
+	}
+}
+
+/* The slider itself */
+.slider {
+	-webkit-appearance: none; /* Override default CSS styles */
+	appearance: none;
+	width: 100%; /* Full-width */
+	height: space(2); /* Specified height */
+	background: $primary-gradient; /* Grey background */
+	outline: none; /* Remove outline */
+	-webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+	transition: opacity 0.2s;
+	border-radius: 5rem;
+}
+
+.slider-input {
+	@include small;
+	padding: space(2);
+	margin-left: space(2);
+	border-radius: $border-radius;
+	position: relative;
+	background-color: $neutral;
+	border: none;
+	color: $text-dark;
+	width: 9.3rem;
+
+	@include up-to-medium {
+		margin-right: auto;
+		margin-left: 0;
+	}
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 50px; /* Set a specific slider handle width */
+	height: 50px; /* Slider handle height */
+	background: $accent-primary; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+	border-radius: 50%;
+
+	&::after {
+		content: '';
+		position: absolute;
+	}
+}
+
+.slider::-moz-range-thumb {
+	width: 50px; /* Set a specific slider handle width */
+	height: 50px; /* Slider handle height */
+	background: $accent-primary; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+	border-radius: 50%;
+}

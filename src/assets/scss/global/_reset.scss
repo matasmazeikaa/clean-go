@@ -8,6 +8,7 @@
 	padding: 0;
 	margin: 0;
 	color: inherit;
+	font-family: $font-family;
 }
 
 *::before,
@@ -16,16 +17,18 @@
 	margin: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
 	margin: 0;
-	font-family: $font-family;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 button {
-	font-family: $font-family;
-	background-color: white;
+	background-color: none;
 	border: none;
 	outline: none;
 	box-shadow: none;

@@ -1,40 +1,20 @@
+.order-modal-form {
+	&__inputs {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 1.6rem;
+		max-width: 40rem;
+		margin: 0 auto 2.4rem auto;
+
+        label {
+            text-align: left;
+        }
+	}
+}
 
 .order-modal {
-	max-width: 550px;
-
-	&__modal-content {
-		padding: 40px;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		align-items: center;
-	}
-
-	&__input {
-		width: 100%;
-
-		&--margin-bottom20 {
-			margin-bottom: 20px;
-		}
-	}
-
 	&__title {
-		margin-bottom: 30px;
-	}
-
-	&__close-icon {
-		width: 32px;
-		height: 32px;
-		cursor: pointer;
-
-		&:hover, &:focus {
-			opacity: 0.6;
-		}
-	}
-
-	&__top-part {
-		background-color: $primary-color;
-		padding: 16px;
-		text-align: right;
+		margin-bottom: 1.6rem;
+        color: $text-dark;
 	}
 }

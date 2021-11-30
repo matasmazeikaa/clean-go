@@ -1,14 +1,7 @@
 .kontaktai {
-	background-color: #f8f8f8;
-
-	&__title {
-		margin-bottom: 24px;
-		color: var(--dark-color)
-	}
-
-	&__contact-container {
-		display: grid;
-		grid-gap: 30px;
-		grid-template-columns: repeat(auto-fill, 400px);
-	}
+    &__contact {
+        font-size: 1.8rem;
+        color: $white;
+        margin-bottom: 1.6rem;
+    }
 }

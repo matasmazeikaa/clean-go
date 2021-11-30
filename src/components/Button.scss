@@ -1,88 +1,30 @@
 .button {
-	$this: &;
-	$background-size: calc(200% + 2px);
-
-	position: relative;
-	background: linear-gradient(to left, $primary-color 50%, $dark-grey-500 50%) right;
-	color: $dark-grey-500;
-	background-size: $background-size;
-	transition: 0.5s cubic-bezier(0.66, 0.33, 0.12, 0.83);
-	overflow: hidden;
-	font-weight: 400;
-	font-size: 1.2rem;
-	line-height: 1.6rem;
-	letter-spacing: 0.16em;
-	text-transform: uppercase;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 1rem 2.4rem;
-	border: 1px solid $primary-color;
-	cursor: pointer;
+	@include button;
+	padding: space(2) space(5);
+	background-color: $accent-primary;
+	color: $neutral;
+	border-radius: $border-radius;
+	transition: background-color 0.1s ease-in;
 	width: fit-content;
-	outline: none;
-	text-decoration: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+	cursor: pointer;
+	position: relative;
 
-	& {
-		-webkit-appearance: none;
-		-moz-appearance: none;
+	&:focus-visible,
+	&:hover {
+		background-color: $accent-primary-hover;
 	}
 
-	&__text {
-		&--loading {
-			z-index: -1;
-		}
-	}
-
-	p {
-		font-size: 1rem;
-		color: $dark-grey-500;
-	}
-
-	&:hover,
-	&:focus, {
-		background-position: left;
-
-		p {
-			color: $primary-color;
-		}
+	&--is-loading {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 
 	&--secondary {
-		color: $primary-color;
-		background: linear-gradient(to left, $white 50%, $primary-color 50%) right;
-		background-size: $background-size;
+		background-color: $accent-secondary;
 
-		&:hover,
-		&:focus {
-			color: $white;
+		&:focus-visible,
+		&:hover {
+			background-color: $accent-secondary-hover;
 		}
-	}
-
-	&--secondary-white {
-		border: 1px solid $white;
-	}
-
-	&--full-width {
-		width: 100%;
-	}
-
-	&--disabled,
-	&--disabled:hover {
-		cursor: not-allowed;
-		background: $grey-500;
-		color: $dark-grey-250;
-		border-color: $grey-500;
-	}
-
-
-	@include up-to-medium {
-		font-size: 1rem;
-		width: 100%;
 	}
 }

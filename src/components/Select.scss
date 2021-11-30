@@ -1,0 +1,22 @@
+.select-container {
+	&__label {
+		color: $text-dark;
+		margin-bottom: space(1);
+		display: block;
+		font-size: 1.4rem;
+	}
+
+	&__select {
+		border: 1px solid $text-dark;
+		padding: 1.5rem space(2);
+		background-color: $white;
+		color: $text-dark;
+		border-radius: $border-radius;
+		width: 100%;
+		outline: none;
+
+		&:focus-visible {
+			box-shadow: 0 0 3pt 2pt $accent-secondary-hover;
+		}
+	}
+}

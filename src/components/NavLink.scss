@@ -1,0 +1,30 @@
+.nav-link {
+	@include small;
+
+	color: $neutral;
+	text-decoration: none;
+	transition: color 0.1s ease-in;
+	position: relative;
+	width: fit-content;
+
+	&:hover,
+	&:focus-visible {
+		color: $accent-primary;
+
+		hr {
+			width: 100%;
+		}
+	}
+
+	hr {
+		width: 0;
+		height: 1px;
+		position: absolute;
+		border: 0;
+		bottom: 0;
+		z-index: 1;
+		transition: all 0.3s ease-out;
+		pointer-events: none;
+		background-color: $accent-primary;
+	}
+}

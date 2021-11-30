@@ -1,51 +1,82 @@
-h1, .h1 {
-  @include h1;
+.h1 {
+	@include h1;
+
+	&--dark {
+		color: $text-dark;
+	}
 }
 
-h2, .h2 {
-  @include h2;
+.h2 {
+	@include h2;
+	position: relative;
+	z-index: 1;
+
+	&--dark {
+		color: $text-dark;
+	}
+
+	&--accent-primary {
+		color: $accent-primary;
+	}
 }
 
-h3, .h3 {
-  @include h3;
-}
-
-h4, .h4 {
-  @include h4;
-}
-
-h5, .h5 {
-  @include h5;
-}
-
-h6, .h6 {
-  @include h6;
-}
-
-ul {
-  @include ul;
-}
-
-li {
-	font-size: 1rem;
+.h3 {
+	@include h3;
 }
 
 .body-1 {
-  @include body-1;
+	@include body-1;
+
+	&--light {
+		color: $text-light;
+	}
 }
 
 .body-2 {
-  @include body-2;
+	@include body-2;
+
+	&--light {
+		color: $text-light;
+	}
 }
 
-p {
-	font-size: 1rem;
-}
+.small {
+	@include small;
 
+	&--light {
+		color: $text-light;
+	}
+}
 .caption {
-  @include caption;
+	@include caption;
+
+	&--light {
+		color: $text-light;
+	}
 }
 
-.label, label {
-  @include label;
+@include up-to-medium {
+	.h1 {
+		font-size: 3.6rem;
+	}
+
+	.h2 {
+		font-size: 3rem;
+	}
+
+	.h3 {
+		font-size: 1.8rem;
+	}
+
+	.body-1 {
+		font-size: 1.6rem;
+	}
+
+	.body-2 {
+		font-size: 1.6rem;
+	}
+
+	.small {
+		font-size: 1.4rem;
+	}
 }

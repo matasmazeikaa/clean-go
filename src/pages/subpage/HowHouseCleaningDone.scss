@@ -1,0 +1,47 @@
+.house-cleaning-section {
+	padding-top: 14rem;
+	padding-bottom: 6rem;
+
+	&__room-types {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 3.2rem;
+		flex-wrap: wrap;
+		margin: -0.8rem;
+
+		& > button {
+			margin: 0.8rem;
+		}
+	}
+
+	&__btn {
+		@include button;
+		padding: space(2) space(5);
+		background-color: transparent;
+		color: $text-dark;
+		border-radius: $border-radius;
+		transition: background-color 0.1s ease-in;
+		width: fit-content;
+		cursor: pointer;
+		position: relative;
+		border: 1px solid $text-dark;
+        
+        &--active {
+            background: $accent-primary;
+			color: $neutral;
+			border: none;
+        }
+	}
+
+	&__img {
+		max-width: 102.4rem;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+        max-height: 62rem;
+	}
+
+	// @include up-to-medium {
+	// 	display: none;
+	// }
+}

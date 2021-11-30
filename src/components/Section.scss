@@ -1,28 +1,17 @@
-
 .section {
-	max-width: 1440px;
-	padding: 120px 5.5%;
-	margin: 0 auto;
+	padding: 0 4.8rem;
 
-	&--padding-big {
-		padding: 120px 5.5%;
-	}
-
-	&--padding-small {
-		padding: 80px 5.5%;
-	}
-
-	&--no-padding-max-width {
-		padding: 80px 0;
-		max-width: unset;
+	&--default-padding {
+		padding-top: 9rem;
+		padding-bottom: 9rem;
 	}
 
 	@include up-to-medium {
-		padding: 80px 6.5%;
-	}
+		padding: 0 2.4rem;
 
-	@media only screen and (min-width: 1720px) {
-		padding-right: 0 !important;
-		padding-left: 0 !important;
+		&--default-padding {
+			padding-top: 8rem;
+			padding-bottom: 8rem;
+		}
 	}
 }

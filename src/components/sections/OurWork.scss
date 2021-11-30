@@ -1,0 +1,21 @@
+.our-work {
+    &__slider {
+        max-width: 76rem;
+        margin: 0 auto;
+        margin-bottom: 2.4rem;
+    }
+
+    &__image {
+        max-width: 50rem;
+        max-height: 50rem;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+    }
+    
+    &__slide {
+        text-align: center;
+        margin: 0 2.4rem;
+        align-self: center;
+    }
+}

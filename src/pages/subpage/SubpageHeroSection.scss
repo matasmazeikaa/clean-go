@@ -1,0 +1,53 @@
+.subpage-hero-section {
+	padding-bottom: 12rem;
+
+	&__title {
+		margin-bottom: 4.2rem;
+
+		&--with-body {
+			margin-bottom: 2.4rem;
+		}
+	}
+
+	&__body {
+		margin-bottom: 2.4rem;
+		color: $neutral;
+		max-width: 100rem;
+	}
+
+	&__img {
+		right: 13rem;
+		top: 8rem;
+		position: absolute;
+		z-index: -1;
+	}
+
+	&__background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		z-index: -1;
+	}
+
+	&__space-bottom {
+		margin-bottom: 4.2rem;
+	}
+
+	@include up-to-medium-large {
+		&__img {
+			right: 0;
+		}
+	}
+
+	@include up-to-medium {
+		&__img {
+			display: none;
+		}
+
+		&__space-bottom {
+			display: none;
+		}
+	}
+}

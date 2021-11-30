@@ -1,0 +1,27 @@
+.trusted-by {
+    &__companies {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        & > img {
+            margin: 2.4rem;
+            max-width: 20rem;
+            min-height: 4rem;
+        }
+    }
+
+    @include up-to-medium {
+        &__companies {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        &__companies {
+            & > img {
+                max-width: 13rem;
+            }
+        }
+    }
+}

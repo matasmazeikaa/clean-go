@@ -1,81 +1,83 @@
+const path = require('path');
+
 module.exports = {
 	siteMetadata: {
-		title: `Gatsby Default Starter`,
-		description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-		author: `@gatsbyjs`,
+		siteUrl: 'https://www.yourdomain.tld',
+		title: 'My Gatsby Site',
 	},
 	plugins: [
-		`gatsby-plugin-react-helmet`,
-		`gatsby-plugin-image`,
 		{
-			resolve: `gatsby-source-filesystem`,
+			resolve: `gatsby-plugin-netlify-cms`,
 			options: {
-				name: `images`,
-				path: `${__dirname}/src/images`,
+				manualInit: true,
+				modulePath: `${__dirname}/src/cms/cms.js`,
 			},
 		},
-		`gatsby-transformer-sharp`,
-		`gatsby-plugin-sharp`,
 		{
-			resolve: `gatsby-plugin-manifest`,
+			resolve: 'gatsby-plugin-sass',
 			options: {
-				name: `gatsby-starter-default`,
-				short_name: `starter`,
+				additionalData: `@import "${__dirname}/src/assets/scss/abstracts";`,
+			},
+		},
+		'gatsby-plugin-image',
+		'gatsby-plugin-react-helmet',
+		'gatsby-plugin-sitemap',
+		{
+			resolve: 'gatsby-plugin-manifest',
+			options: {
+				name: `GatsbyJS`,
+				short_name: `GatsbyJS`,
 				start_url: `/`,
-				background_color: `#663399`,
-				theme_color: `#663399`,
-				display: `minimal-ui`,
-				icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+				background_color: `#f7f0eb`,
+				theme_color: `#a2466c`,
+				display: `standalone`,
+				icon: 'src/images/icons/logo.svg',
 			},
 		},
-    {
-      resolve: 'gatsby-plugin-google-fonts-v2',
-      options: {
-        fonts: [
-          {
-            family: 'Rubik',
-            weights: ['400', '700'],
-          },
-        ],
-      },
-    },
-    `gatsby-plugin-gatsby-cloud`,
-    {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        additionalData: `@import "${__dirname}/src/assets/scss/abstracts";`,
-      },
-    },
+		'gatsby-plugin-mdx',
+		'gatsby-plugin-sharp',
+		'gatsby-transformer-sharp',
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'images',
+				path: './src/images/',
+			},
+			__key: 'images',
+		},
+		{
+			resolve: 'gatsby-plugin-google-fonts-v2',
+			options: {
+				fonts: [
+					{
+						family: 'Montserrat',
+						weights: ['400', '700'],
+					},
+				],
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-root-import',
+			options: {
+				resolveModules: [path.join(__dirname, 'libs')],
+				'@': path.join(__dirname, 'src'),
+			},
+		},
 		{
 			resolve: 'gatsby-plugin-react-svg',
 			options: {
 				rule: {
-					include: /images\/.*\.svg/,
-				}
-			}
+					include: /icons/,
+				},
+			},
 		},
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: process.env.GTM_ID,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          process.env.GTAG_ID
-        ],
-        pluginConfig: {
-          head: true,
-        },
-      },
-    },
-    
-    
-    
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-		// To learn more, visit: https://gatsby.dev/offline
-		// `gatsby-plugin-offline`,
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'pages',
+				path: './src/pages/',
+			},
+			__key: 'pages',
+		},
 	],
-}
+};
