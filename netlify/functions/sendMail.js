@@ -1,12 +1,12 @@
 const nodemailer = require('nodemailer');
 
-const transporter = nodemailer.createTransport({
-	host: 'smtp.titan.email',
+let transporter = nodemailer.createTransport({
+	host: "smtp.titan.email",
 	port: 465,
 	secure: true, // true for 465, false for other ports
 	auth: {
-		user: 'info@pasiskiepijes.lt',
-		pass: '2684526845Matas', // generated ethereal password
+	  user: process.env.EMAIL, // generated ethereal user
+	  pass: process.env.EMAIL_PASSWORD, // generated ethereal password
 	},
 });
 
