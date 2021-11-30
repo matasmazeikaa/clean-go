@@ -10,7 +10,7 @@ const GeneralinisValymasPage = () => (
 	<main>
 		<HeroSection title="Kontaktai">
 			<div className="kontaktai">
-				<p className="kontaktai__contact">
+				<p className="kontaktai__contact contact">
 					Telefonas: <a href="tel:+37069009404">+37069009404</a>
 				</p>
 				<p className="kontaktai__contact">
