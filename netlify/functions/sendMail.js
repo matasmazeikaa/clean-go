@@ -45,8 +45,8 @@ const sendMail = (emailData) => {
 
 	try {
 		return transporter.sendMail({
-			from: 'info@pasiskiepijes.lt', // sender address
-			to: 'info@pasiskiepijes.lt', // list of receivers
+			from: 'info@cleango.lt', // sender address
+			to: 'info@cleango.lt', // list of receivers
 			subject: 'Užsakymas ✔', // Subject line
 			text: 'Užsakymas', // plain text body
 			html, // html body
@@ -72,6 +72,7 @@ exports.handler = async (event, context) => {
 			headers,
 		};
 	} catch (error) {
+        console.log(error)
 		return {
 			statusCode: 422,
 			body: String(error),

@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export const api = axios.create({
-	baseURL: 'https://cleango.lt/.netlify/functions/',
+	baseURL: 'http://localhost:57341/.netlify/functions/',
 });
