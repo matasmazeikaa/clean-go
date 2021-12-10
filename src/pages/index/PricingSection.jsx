@@ -259,7 +259,7 @@ const PricingSection = ({ startingCleaningType, startingService }) => {
 							checked={frequency === FREQUENCY_TWICE}
 							onChange={updateFrequency(FREQUENCY_TWICE)}
 						/>
-						<span className="pricing-section__radio-btn-text body-2">{FREQUENCY_ONCE}</span>
+						<span className="pricing-section__radio-btn-text body-2">{FREQUENCY_TWICE}</span>
 					</label>
 				</div>
 			</>
