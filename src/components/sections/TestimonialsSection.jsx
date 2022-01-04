@@ -14,12 +14,12 @@ const TESTIMONIALS = [
 		text: 'Pirmą kartą pabandžiau išsikviesti į namus valymo paslaugas atliekančią įmonę ir nenusivyliau. Rekomenduoju ir kitiems pasinaudoti šios puikios komandos paslaugomis.',
 	},
 	{
-		name: 'Jonas',
+		name: 'Agnė',
 		img: Testimonial2,
 		text: 'Įsiklausė į mano pageidavimus, patarė ir pasiūlė optimaliausią variantą. Tiesiog puikiai atliko darbą.',
 	},
 	{
-		name: 'Sigitas',
+		name: 'Izabelė',
 		img: Testimonial3,
 		text: 'Rekomenduoju, nes dirba greitai ir kokybiškai. Mano visas namas tiesiog blizga!',
 	},
