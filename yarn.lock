@@ -8378,6 +8378,22 @@ gatsby-plugin-google-fonts-v2@^1.0.0:
     gatsby-plugin-ts "^2.7.0"
     ts-jest "^26.5.4"
 
+gatsby-plugin-google-gtag@^4.8.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-4.8.0.tgz#1afb466f9d9f587015483ea616a81146846abe88"
+  integrity sha512-LBYrz83q0KWrEgGHAoPa5JW3ycQhqq2l6JG5lAnt+Av0s1QEbl5CGCKw1ZV6+uQ7QRdRtU/DazAYcqsb/M2swA==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    minimatch "^3.0.4"
+
+gatsby-plugin-google-tagmanager@^4.8.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-4.8.0.tgz#672c4bef1a0135b4de91f2a07410c52348f74dd1"
+  integrity sha512-gRXlR8kKHiQRIL4P4M2moHTcokESrOCI/ps4LiEJ71rmmmcudCYOuqteI08cFETKt+LApD3YXUf+zPZtUiIK0Q==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    web-vitals "^1.1.2"
+
 gatsby-plugin-graphql-codegen@^2.7.3:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-graphql-codegen/-/gatsby-plugin-graphql-codegen-2.7.3.tgz#78a35556f565c8bf2c82a74cdea7ca80ada85310"
