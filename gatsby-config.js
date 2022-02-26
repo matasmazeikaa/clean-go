@@ -79,5 +79,22 @@ module.exports = {
 			},
 			__key: 'pages',
 		},
+		{
+			resolve: "gatsby-plugin-google-tagmanager",
+			options: {
+				id: process.env.GTM_ID,
+			},
+		},
+		{
+			resolve: `gatsby-plugin-google-gtag`,
+			options: {
+				trackingIds: [
+					process.env.GTAG_ID
+				],
+				pluginConfig: {
+					head: true,
+				},
+			},
+		},
 	],
 };

@@ -27,7 +27,7 @@ const Footer = () => (
 							>
 								info@cleango.lt
 							</a>
-							<p className="footer__contact-link body-1">Eisiškių sodų 4-oji 18, Vilnius</p>
+							<p className="footer__contact-link body-1">Kauno g. 30, Vilnius</p>
 						</div>
 						<div className="footer__links-container">
 							{SERVICES_NAVIGATION.map((service) => (

@@ -21,7 +21,7 @@ const GeneralinisValymasPage = () => (
 					Įm. k.: <strong>305052153</strong>
 				</p>
 				<p className="kontaktai__contact">
-					Adresas: <strong>Eisiškių sodų 4-oji 18, Vilnius</strong>
+					Adresas: <strong>Kauno g. 30, Vilnius</strong>
 				</p>
 			</div>
 		</HeroSection>
