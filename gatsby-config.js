@@ -8,13 +8,6 @@ module.exports = {
 	},
 	plugins: [
 		{
-			resolve: `gatsby-plugin-netlify-cms`,
-			options: {
-				manualInit: true,
-				modulePath: `${__dirname}/src/cms/cms.js`,
-			},
-		},
-		{
 			resolve: 'gatsby-plugin-sass',
 			options: {
 				additionalData: `@import "${__dirname}/src/assets/scss/abstracts";`,
@@ -97,5 +90,15 @@ module.exports = {
 				},
 			},
 		},
+		{
+			resolve: 'gatsby-plugin-bundle-stats',
+			options: {
+			  compare: true,
+			  outDir: '../artifacts',
+			  stats: {
+				context: './src'
+			  }
+			}
+		  },
 	],
 };

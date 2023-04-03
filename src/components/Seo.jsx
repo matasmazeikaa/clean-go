@@ -59,7 +59,6 @@ export default function Seo({
         sizes="180x180"
         href="/icons/apple-touch-icon.png"
       />
-      <link rel="manifest" href="/manifest.json" />
       <link
         rel="mask-icon"
         color="#000000"
