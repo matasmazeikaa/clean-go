@@ -72,7 +72,7 @@ exports.handler = async (event, context) => {
 			headers,
 		};
 	} catch (error) {
-        console.log(error)
+        console.log(error, 'wat?dsa')
 		return {
 			statusCode: 422,
 			body: String(error),

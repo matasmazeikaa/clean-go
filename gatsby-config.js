@@ -2,8 +2,9 @@ const path = require('path');
 
 module.exports = {
 	siteMetadata: {
-		siteUrl: 'https://www.yourdomain.tld',
-		title: 'My Gatsby Site',
+		siteUrl: 'https://cleango.lt',
+		title: 'Cleango',
+		description: "Patalpų valymo įmonė, savo klientams siūlanti profesionalias ir kokybiškas butų, namų, komercinių patalpų bei langų valymo paslaugas."
 	},
 	plugins: [
 		{
