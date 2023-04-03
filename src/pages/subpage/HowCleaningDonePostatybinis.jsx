@@ -47,6 +47,7 @@ const HowCleaningDonePostatybinis = () => {
               <button
                 key={value.title}
                 type="button"
+                aria-label={value.title}
                 className={classNames({
                   "house-cleaning-section__btn": true,
                   "house-cleaning-section__btn--active":

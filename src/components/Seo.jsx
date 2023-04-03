@@ -13,7 +13,11 @@ export default function Seo({
   description = defaultDescription,
 }) {
   return (
-    <Helmet>
+    <Helmet
+      htmlAttributes={{
+        lang: "lt",
+      }}
+    >
       {/* Recommended Meta Tags */}
       <meta charSet="utf-8" />
       <meta name="language" content="lt" />

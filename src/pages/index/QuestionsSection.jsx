@@ -103,6 +103,7 @@ const QuestionsSection = () => {
                 type="button"
                 className="question-container__question body-2"
                 onClick={updateOpenAnswer(index)}
+                aria-label={"praplėsti klausimą" + question.question}
               >
                 {question.question}
                 <ChevronDown
