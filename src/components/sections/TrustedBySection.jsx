@@ -23,6 +23,7 @@ const TrustedBySection = () => (
       <div className="trusted-by__companies">
         {TRUSTED_COMPANIES.map(trustedComapny => (
           <img
+            loading="lazy"
             key={trustedComapny.alt}
             src={trustedComapny.src}
             alt={trustedComapny.alt}

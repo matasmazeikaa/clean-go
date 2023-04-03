@@ -221,9 +221,11 @@ const PricingSection = ({ startingCleaningType, startingService }) => {
                 onClick={updateService(cleaningService.title)}
               >
                 <img
+                  loading="lazy"
                   src={cleaningService.icon}
                   alt=""
                   className="pricing-section__select-icon"
+                  loading="lazy"
                 />
               </button>
               <p className="small">{cleaningService.title}</p>

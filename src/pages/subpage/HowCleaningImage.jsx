@@ -7,7 +7,12 @@ const HowCleaningImage = ({ title, img, alt }) => (
   <Container>
     <Section className="house-cleaning-section">
       <h2 className="h2 default-section-title-mb text-center">{title}</h2>
-      <img className="house-cleaning-section__img" src={img} alt={alt} />
+      <img
+        loading="lazy"
+        className="house-cleaning-section__img"
+        src={img}
+        alt={alt}
+      />
     </Section>
   </Container>
 )

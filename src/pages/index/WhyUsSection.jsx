@@ -20,7 +20,12 @@ const WhyUsSection = () => (
   <div className="why-us-section">
     <Container>
       <Section className="why-us-section__container">
-        <img className="why-us-section__img" src={WhyUsSectionImg} alt="" />
+        <img
+          loading="lazy"
+          className="why-us-section__img"
+          src={WhyUsSectionImg}
+          alt=""
+        />
         <h2 className="why-us-section__title h2 default-section-header-mb">
           Kodėl verta rinktis mus
         </h2>
@@ -28,6 +33,7 @@ const WhyUsSection = () => (
           {WHY_US_POINTS.map((point, index) => (
             <div key={index} className="why-us-section__why-us-point">
               <img
+                loading="lazy"
                 src={point.icon}
                 alt=""
                 className="why-us-section__point-img"

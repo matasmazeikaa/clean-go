@@ -35,7 +35,12 @@ const OurWork = ({ service, workImages = OUR_WORK_IMAGES }) => (
       >
         {workImages.map(image => (
           <SplideSlide className="our-work__slide">
-            <img src={image.img} alt={image.alt} className="our-work__image" />
+            <img
+              loading="lazy"
+              src={image.img}
+              alt={image.alt}
+              className="our-work__image"
+            />
           </SplideSlide>
         ))}
       </Splide>

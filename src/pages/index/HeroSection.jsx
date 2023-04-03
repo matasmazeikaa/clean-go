@@ -41,6 +41,7 @@ const HeroSection = ({ title, children }) => (
             <HeroOrder />
           </div>
           <img
+            loading="lazy"
             src={HeroImg}
             alt="aukštalipys valantis"
             className="hero-section__hero-img"

@@ -49,6 +49,7 @@ const ServicesSection = () => (
                 <div className="services-section__service-type" key={type}>
                   <img
                     src={CheckmarkIcon}
+                    loading="lazy"
                     alt=""
                     className="services-section__checkmark-icon"
                   />

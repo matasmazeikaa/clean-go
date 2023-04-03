@@ -66,6 +66,7 @@ const HowCleaningDone = ({ title }) => {
         </Section>
       </Container>
       <img
+        loading="lazy"
         className="house-cleaning-section__img"
         src={HOUSE_CLEANING_TYPES[houseCleaningType].img}
         alt={HOUSE_CLEANING_TYPES[houseCleaningType].alt}

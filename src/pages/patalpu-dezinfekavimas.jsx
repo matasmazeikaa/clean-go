@@ -51,6 +51,7 @@ const PatalpuDezinfekavimasPage = () => (
           </p>
         </div>
         <img
+          loading="lazy"
           src={PatalpuDezinfekavimas}
           className="dezinfekavimas-img"
           alt="patalpų dezinfekavimo komanda"
