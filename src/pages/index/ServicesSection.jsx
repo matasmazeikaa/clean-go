@@ -36,7 +36,7 @@ const SERVICES = [
 const ServicesSection = () => (
   <Container>
     <Section className="services-section">
-      <h2 className="h2 default-section-header-mb">Paslaugos</h2>
+      <h2 className="h2 default-section-header-mb">Valymo paslaugos</h2>
       <div className="services-section__services">
         {SERVICES.map((service, index) => (
           <div className="services-section__service" key={index}>

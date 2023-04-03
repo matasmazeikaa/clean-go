@@ -5,7 +5,7 @@ const titleDefault =
   "Profesionalus patalpų, butų, namų, komercinių patalpų ir langų valymas"
 const url = "https://cleango.lt/"
 const defaultDescription =
-  "Siūlome aukščiausios kokybės patalpų, butų, namų, komercinių patalpų ir langų valymo paslaugas. Mūsų komanda yra patyrusi ir profesionali. Susisiekite su mumis jau šiandien!"
+  "Siūlome aukščiausios kokybės patalpų, butų, namų, komercinių patalpų ir langų valymas. Mūsų komanda yra patyrę ir profesionalūs valymo specialista. Susisiekite su mumis jau šiandien!"
 const author = "Cleango"
 
 export default function Seo({
@@ -44,16 +44,8 @@ export default function Seo({
       <meta name="og:site_name" content={title} />
       <meta name="og:description" content={description} />
       <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
-      <link
-        rel="apple-touch-icon"
-        sizes="16x16"
-        href="/icons/favicon-16x16.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="32x32"
-        href="/icons/favicon-32x32.png"
-      />
+      <link rel="apple-touch-icon" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="apple-touch-icon" sizes="32x32" href="/favicon-32x32.png" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -73,7 +65,7 @@ export default function Seo({
         content="width=device-width, minimum-scale=1, initial-scale=1.0"
       />
       <meta name="theme-color" content="#000" />
-      <link rel="shortcut icon" href="/icons/favicon.ico" />
+      <link rel="shortcut icon" href="/favicon.svg" />
     </Helmet>
   )
 }

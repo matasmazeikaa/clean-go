@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
 	siteMetadata: {
-		siteUrl: 'https://cleango.lt',
+		siteUrl: 'https://www.cleango.lt',
 		title: 'Cleango',
 		description: "Patalpų valymo įmonė, savo klientams siūlanti profesionalias ir kokybiškas butų, namų, komercinių patalpų bei langų valymo paslaugas."
 	},
@@ -100,5 +100,14 @@ module.exports = {
 			  }
 			}
 		  },
+			{
+			resolve: 'gatsby-plugin-robots-txt',
+			options: {
+				host: 'https://www.cleango.lt',
+				sitemap: 'https://www.cleango.lt/sitemap-index.xml',
+				policy: [{userAgent: '*', allow: '/'}]
+			}
+		}
+	  
 	],
 };
