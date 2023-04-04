@@ -5,7 +5,7 @@ const titleDefault =
   "Profesionalus patalpų, butų, namų, komercinių patalpų ir langų valymas"
 const url = "https://cleango.lt/"
 const defaultDescription =
-  "Siūlome aukščiausios kokybės patalpų, butų, namų, komercinių patalpų ir langų valymas. Mūsų komanda yra patyrę ir profesionalūs valymo specialista. Susisiekite su mumis jau šiandien!"
+  "Siūlome aukščiausios kokybės patalpų, butų, namų, komercinių patalpų ir langų valymą. Mūsų komanda yra patyrę ir profesionalūs valymo specialistai. Susisiekite su mumis jau šiandien!"
 const author = "Cleango"
 
 export default function Seo({

@@ -25,10 +25,7 @@ const HeroSection = ({ title, children }) => (
             {!title && (
               <>
                 <h1 className="hero-section__title hero-section__title--line-height-1 h1">
-                  Mes valom
-                </h1>
-                <h1 className="hero-section__title hero-section__title--mb h1">
-                  Jūs relaksuojat
+                  Mes valom <br /> Jūs relaksuojat
                 </h1>
                 <p className="hero-section__body body-1">
                   Mes esame patikima patalpų valymo įmonė, savo klientams
