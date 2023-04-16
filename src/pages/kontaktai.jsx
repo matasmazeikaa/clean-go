@@ -21,7 +21,7 @@ const GeneralinisValymasPage = () => (
         <p className="kontaktai__contact">
           Paštas: <a href="mailto:info@cleango.lt">info@cleango.lt</a>
         </p>
-        <p className="kontaktai__contact">UAB "CleanGo"</p>
+        <p className="kontaktai__contact">UAB Elvenita, "CleanGo"</p>
         <p className="kontaktai__contact">
           Įm. k.: <strong>305052153</strong>
         </p>

@@ -136,8 +136,8 @@ const PricingSection = ({ startingCleaningType, startingService }) => {
     }
 
     if (cleaningType === CLEANING_TYPE_GENERALINIS) {
-      const MIN_STEP_PRICE = 1.8
-      const MAX_STEP_PRICE = 2.5
+      const MIN_STEP_PRICE = 2.3
+      const MAX_STEP_PRICE = 3
 
       const minStepsPrice = area * MIN_STEP_PRICE
       const maxStepsPrice = area * MAX_STEP_PRICE
@@ -146,8 +146,8 @@ const PricingSection = ({ startingCleaningType, startingService }) => {
     }
 
     if (cleaningType === CLEANING_TYPE_POSTATYBINIS) {
-      const MIN_STEP_PRICE = 1.8
-      const MAX_STEP_PRICE = 2.5
+      const MIN_STEP_PRICE = 2.3
+      const MAX_STEP_PRICE = 3
 
       const minStepsPrice = area * MIN_STEP_PRICE
       const maxStepsPrice = area * MAX_STEP_PRICE

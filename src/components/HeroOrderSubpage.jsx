@@ -79,14 +79,23 @@ const HeroOrderSubpage = ({ service, cleaningType }) => {
             requiredMessage="Įveskite tel. numerį"
           />
         </div>
-        <Button
-          className="hero-order__button"
-          type="submit"
-          isLoading={isLoading}
-          ariaLabel="užsisakyti"
-        >
-          Užsisakyti
-        </Button>
+        <div class="hero-order__order-action">
+          <Button
+            className="hero-order__button"
+            type="submit"
+            isLoading={isLoading}
+            ariaLabel="užsisakyti"
+          >
+            Užsisakyti
+          </Button>
+          <span className="hero-order__call">arba skambinti</span>
+          <a
+            className="footer__contact-link footer__contact-link--hoverable body-1"
+            href="tel:+37069009404"
+          >
+            +37069009404
+          </a>
+        </div>
       </form>
       <SuccessModal isOpen={isModalOpen} onClose={closeModal} />
     </>

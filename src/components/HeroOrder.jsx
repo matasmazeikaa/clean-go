@@ -92,14 +92,23 @@ const HeroOrder = () => {
             requiredMessage="Įveskite tel. numerį"
           />
         </div>
-        <Button
-          className="hero-order__button"
-          type="submit"
-          isLoading={isLoading}
-          ariaLabel="užsisakyti"
-        >
-          Užsisakyti
-        </Button>
+        <div className="hero-order__order-action">
+          <Button
+            className="hero-order__button"
+            type="submit"
+            isLoading={isLoading}
+            ariaLabel="užsisakyti"
+          >
+            Užsisakyti
+          </Button>
+          <p className="hero-order__call">arba skambinti</p>
+          <a
+            className="footer__contact-link footer__contact-link--hoverable body-1"
+            href="tel:+37069009404"
+          >
+            +37069009404
+          </a>
+        </div>
       </form>
       <SuccessModal isOpen={isModalOpen} onClose={closeModal} />
     </>
