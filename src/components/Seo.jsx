@@ -66,6 +66,10 @@ export default function Seo({
       />
       <meta name="theme-color" content="#000" />
       <link rel="shortcut icon" href="/favicon.svg" />
+      <script
+        type="text/javascript"
+        src="https://app.termly.io/resource-blocker/e59cafff-b178-48ee-bafd-cdba50232a34?autoBlock=on"
+        />
     </Helmet>
   )
 }

@@ -10,6 +10,7 @@ import Seo from "@/components/Seo"
 
 const IndexPage = () => (
   <main>
+
     <Seo />
     <HeroSection />
     <WhyUsSection />
